@@ -50,12 +50,12 @@ function cargaListaCentros(){
         //alert(_dicCentroNombre[v_id]);
         //alert(_dicCentroCodigo[v_id]);
 
-        v_li ="<div style='width:22%;height:38px;float: left;background-color: #efefef;border: 1px solid #efefef;margin: 2px;line-height: 38px;text-align: center'>";
-        v_li +="<img src='img/"+_dicCentroImagen[v_id]+"' style='max-width:100%;max-height:40px;display: inline-block;vertical-align:middle' />";
+        v_li ="<div style='width:27%;height:48px;float: left;background-color: #efefef;border: 1px solid #efefef;margin: 2px;line-height: 48px;text-align: center'>";
+        v_li +="<img src='img/"+_dicCentroImagen[v_id]+"' style='max-width:100%;max-height:50px;display: inline-block;vertical-align:middle' />";
         v_li +="</div>"
-        v_li +=" <div style='width:75%;float: right'>";
+        v_li +=" <div style='width:70%;float: right'>";
         v_li +=" <table cellpadding='0' cellspacing='0' border='0' style='width: 100%;table-layout: fixed'>";
-        v_li +=" <tr><td style='font-weight: bold'>"+_dicCentroNombre[v_id]+"</td></tr>";
+        v_li +=" <tr><td style='font-weight: normal'>"+_dicCentroNombre[v_id]+"</td></tr>";
         v_li +=" <tr><td style='overflow: hidden;text-overflow: ellipsis;white-space: nowrap' >"+_dicCentroCodigo[v_id]+"</td></tr>";
         v_li +=" </table></div>";
 

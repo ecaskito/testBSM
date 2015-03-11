@@ -140,12 +140,12 @@
 #lvCentros li{
     padding: 0px;
     color: #666666;
-    height: 50px;
-    font-size: 1em;
+    height: 60px;
+    font-size: 0.95em;
 }
 
 #lvCentros li a{
-    font-size: 1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #666666;
     padding-left: 2px;
@@ -158,7 +158,7 @@
     background-color:#f6f6f6;
     color: #666666;
     padding:5px 2px;
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
 }
@@ -170,7 +170,7 @@
 #lvSector1 li{
     padding: 0px;
     color: #666666;
-    font-size: 0.85em;
+    font-size: 0.9em;
 }
 
 #lvSector1 li div{
@@ -246,14 +246,14 @@
 .lbltit{
     color: #666666;
     padding:5px;
-    font-size: 0.95em !Important;
+    font-size: 1.05em !Important;
     background-color: #f6f6f6;
     font-weight: bold !Important;;
 }
 .lblnormal{
     color: #666666;
     padding:5px;
-    font-size: 1em !Important;
+    font-size: 1.05em !Important;
 }
 
 #divFicha label{
@@ -279,15 +279,14 @@
 
 #divTipoInci{
     padding-top: 20px;
-    width: 100%;
     text-align: center;
     align-content: center;
     display: inline-table;
 }
 
 #divTipoInci a{
-    width: 150px;
-    height: 80px;
+    width: 110px;
+    height: 90px;
     display: inherit;
     margin: 5px;
     text-align: center;
@@ -299,7 +298,7 @@
 }
 
 #divTipoInci a div {
-    line-height: 20px;
+    line-height: 15px;
 }
 
 .divCargar{
