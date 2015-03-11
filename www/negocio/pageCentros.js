@@ -16,7 +16,7 @@ function inicioPageCentros(){
 function leeXMLCentro() {
     $.ajax({
         type: "GET",
-        url: "tablas/centro.xml",
+        url: "tablas/Centro.xml",
         dataType: "xml",
         success: function (xml) {
             $(xml).find('Centro').each(function () {

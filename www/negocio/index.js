@@ -21,6 +21,9 @@ var app = {
 };
 
 function deviceReady() {
+    if (!$.jStorage.storageAvailable()) {
+        alert("localstorage no soportat");
+    }
 
 }
 
