@@ -50,8 +50,8 @@ function cargaListaCentros(){
         //alert(_dicCentroNombre[v_id]);
         //alert(_dicCentroCodigo[v_id]);
 
-        v_li ="<div style='width:22%;height:28px;float: left;background-color: #efefef;border: 1px solid #efefef;margin: 2px;line-height: 28px;text-align: center'>";
-        v_li +="<img src='img/"+_dicCentroImagen[v_id]+"' style='max-width:100%;max-height:30px;display: inline-block;vertical-align:middle' />";
+        v_li ="<div style='width:22%;height:38px;float: left;background-color: #efefef;border: 1px solid #efefef;margin: 2px;line-height: 38px;text-align: center'>";
+        v_li +="<img src='img/"+_dicCentroImagen[v_id]+"' style='max-width:100%;max-height:40px;display: inline-block;vertical-align:middle' />";
         v_li +="</div>"
         v_li +=" <div style='width:75%;float: right'>";
         v_li +=" <table cellpadding='0' cellspacing='0' border='0' style='width: 100%;table-layout: fixed'>";

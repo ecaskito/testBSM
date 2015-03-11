@@ -140,12 +140,12 @@
 #lvCentros li{
     padding: 0px;
     color: #666666;
-    height: 40px;
-    font-size: 0.9em;
+    height: 50px;
+    font-size: 1em;
 }
 
 #lvCentros li a{
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: normal;
     color: #666666;
     padding-left: 2px;
@@ -158,7 +158,7 @@
     background-color:#f6f6f6;
     color: #666666;
     padding:5px 2px;
-    font-size: 0.8em;
+    font-size: 0.9em;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
 }
@@ -174,7 +174,7 @@
 }
 
 #lvSector1 li div{
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: normal;
     color: #666666;
     padding: 7px;
@@ -194,7 +194,7 @@
 }
 
 #lvSector2 li div{
-    font-size: 0.85em;
+    font-size:1em;
     font-weight: normal;
     color: #666666;
     padding: 7px;
@@ -214,7 +214,7 @@
 }
 
 #lvDependencia1 li div{
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: normal;
     color: #666666;
     padding: 7px;
@@ -234,7 +234,7 @@
 }
 
 #lvDependencia2 li div{
-    font-size: 0.85em;
+    font-size: 1em;
     font-weight: normal;
     color: #666666;
     padding: 7px;
@@ -246,14 +246,14 @@
 .lbltit{
     color: #666666;
     padding:5px;
-    font-size: 0.8em !Important;
+    font-size: 0.95em !Important;
     background-color: #f6f6f6;
     font-weight: bold !Important;;
 }
 .lblnormal{
     color: #666666;
     padding:5px;
-    font-size: 0.85em !Important;
+    font-size: 1em !Important;
 }
 
 #divFicha label{
@@ -286,7 +286,7 @@
 }
 
 #divTipoInci a{
-    width: 110px;
+    width: 150px;
     height: 80px;
     display: inherit;
     margin: 5px;
@@ -294,10 +294,12 @@
     white-space: normal;
     text-transform: none;
     font-width: normal;
+    font-size: 0.9em;
+    font-weight: normal;
 }
 
 #divTipoInci a div {
-    line-height: 10px;
+    line-height: 20px;
 }
 
 .divCargar{
