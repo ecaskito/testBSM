@@ -139,7 +139,7 @@
 }
 #lvCentros li{
     padding: 0px;
-    color: #666666;
+    color: #333333;
     height: 60px;
     font-size: 0.95em;
 }
@@ -147,7 +147,7 @@
 #lvCentros li a{
     font-size: 0.95em;
     font-weight: normal;
-    color: #666666;
+    color: #333333;
     padding-left: 2px;
     padding-right: 2px;
     background-color: #fefefe;
@@ -156,7 +156,7 @@
 
 .divtitubicacion{
     background-color:#f6f6f6;
-    color: #666666;
+    color: #333333;
     padding:5px 2px;
     font-size: 1em;
     font-weight: bold;
@@ -168,15 +168,15 @@
     padding: 0em;
 }
 #lvSector1 li{
-    padding: 0px;
-    color: #666666;
-    font-size: 0.9em;
+    padding: 10px 0px;
+    color: #333333;
+    font-size: 1em;
 }
 
 #lvSector1 li div{
     font-size: 1em;
     font-weight: normal;
-    color: #666666;
+    color: #333333;
     padding: 7px;
     text-transform: none;
     background-color: #fefefe;
@@ -188,15 +188,15 @@
     padding: 0em;
 }
 #lvSector2 li{
-    padding: 0px;
-    color: #666666;
-    font-size: 0.85em;
+    padding: 10px 0px;
+    color: #333333;
+    font-size: 1em;
 }
 
 #lvSector2 li div{
     font-size:1em;
     font-weight: normal;
-    color: #666666;
+    color: #333333;
     padding: 7px;
     text-transform: none;
     background-color: #fefefe;
@@ -208,15 +208,15 @@
     padding: 0em;
 }
 #lvDependencia1 li{
-    padding: 0px;
-    color: #666666;
-    font-size: 0.85em;
+    padding: 10px 0px;
+    color: #333333;
+    font-size: 1em;
 }
 
 #lvDependencia1 li div{
     font-size: 1em;
     font-weight: normal;
-    color: #666666;
+    color: #333333;
     padding: 7px;
     text-transform: none;
     background-color: #fefefe;
@@ -228,15 +228,15 @@
     padding: 0em;
 }
 #lvDependencia2 li{
-    padding: 0px;
-    color: #666666;
-    font-size: 0.85em;
+    padding: 10px 0px;
+    color: #333333;
+    font-size: 1em;
 }
 
 #lvDependencia2 li div{
     font-size: 1em;
     font-weight: normal;
-    color: #666666;
+    color: #333333;
     padding: 7px;
     text-transform: none;
     background-color: #fefefe;
@@ -244,14 +244,14 @@
 }
 
 .lbltit{
-    color: #666666;
+    color: #333333;
     padding:5px;
     font-size: 1.05em !Important;
     background-color: #f6f6f6;
     font-weight: bold !Important;;
 }
 .lblnormal{
-    color: #666666;
+    color: #333333;
     padding:5px;
     font-size: 1.05em !Important;
 }
@@ -278,7 +278,7 @@
 }
 
 #divTipoInci{
-    padding-top: 20px;
+    width: 100%;
     text-align: center;
     align-content: center;
     display: inline-table;
