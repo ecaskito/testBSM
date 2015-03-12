@@ -141,11 +141,11 @@
     padding: 0px;
     color: #333333;
     height: 60px;
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 #lvCentros li a{
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: normal;
     color: #333333;
     padding-left: 2px;
@@ -158,7 +158,7 @@
     background-color:#f6f6f6;
     color: #333333;
     padding:5px 2px;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
 }
@@ -168,13 +168,17 @@
     padding: 0em;
 }
 #lvSector1 li{
-    padding: 10px 0px;
+    padding: 0px;
     color: #333333;
-    font-size: 1.5em;
+    font-size: 1.2em;
+}
+
+#lvSector1 li div:hover{
+    background-color: rgba(26,154,220,0.3);
 }
 
 #lvSector1 li div{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: normal;
     color: #333333;
     padding: 15px 7px;
@@ -182,19 +186,20 @@
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
 }
+
 #lvSector2{
     list-style: none;
     margin: 0em;
     padding: 0em;
 }
 #lvSector2 li{
-    padding: 10px 0px;
+    padding: 0px;
     color: #333333;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 #lvSector2 li div{
-    font-size:1.5em;
+    font-size:1.2em;
     font-weight: normal;
     color: #333333;
     padding: 15px 7px;
@@ -202,19 +207,26 @@
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
 }
+#lvSector2 li div:hover {
+    background-color: rgba(26,154,220,0.3);
+}
+
 #lvDependencia1{
     list-style: none;
     margin: 0em;
     padding: 0em;
 }
 #lvDependencia1 li{
-    padding: 10px 0px;
+    padding: 0px;
     color: #333333;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+#lvDependencia1 li div:hover {
+    background-color: rgba(26,154,220,0.3);
 }
 
 #lvDependencia1 li div{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: normal;
     color: #333333;
     padding: 15px 7px;
@@ -228,13 +240,16 @@
     padding: 0em;
 }
 #lvDependencia2 li{
-    padding: 10px 0px;
+    padding: 0px;
     color: #333333;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+#lvDependencia2 li div:hover {
+    background-color: rgba(26,154,220,0.3);
 }
 
 #lvDependencia2 li div{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: normal;
     color: #333333;
     padding: 15px 7px;
@@ -244,16 +259,26 @@
 }
 
 .lbltit{
-    color: #333333;
+    color: #16648d ;
     padding:5px;
-    font-size: 1.5em !Important;
+    font-size: 1.05em !Important;
     background-color: #f6f6f6;
     font-weight: bold !Important;;
+}
+.lbltit:hover {
+    background-color: rgba(26,154,220,0.3);
 }
 .lblnormal{
     color: #333333;
     padding:5px;
-    font-size: 1.5em !Important;
+    font-size: 1.2em !Important;
+}
+#divDatosUbicacion a{
+    color: #16648d ;
+    text-decoration: none;
+}
+#divDatosUbicacion a:hover{
+    background-color: rgba(26,154,220,0.3);
 }
 
 #divFicha label{
