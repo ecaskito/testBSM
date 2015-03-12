@@ -141,11 +141,11 @@
     padding: 0px;
     color: #333333;
     height: 60px;
-    font-size: 0.95em;
+    font-size: 1.2em;
 }
 
 #lvCentros li a{
-    font-size: 0.95em;
+    font-size: 1.2em;
     font-weight: normal;
     color: #333333;
     padding-left: 2px;
@@ -158,7 +158,7 @@
     background-color:#f6f6f6;
     color: #333333;
     padding:5px 2px;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
 }
@@ -170,14 +170,14 @@
 #lvSector1 li{
     padding: 10px 0px;
     color: #333333;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 #lvSector1 li div{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: normal;
     color: #333333;
-    padding: 7px;
+    padding: 15px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -194,10 +194,10 @@
 }
 
 #lvSector2 li div{
-    font-size:1em;
+    font-size:1.5em;
     font-weight: normal;
     color: #333333;
-    padding: 7px;
+    padding: 15px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -214,10 +214,10 @@
 }
 
 #lvDependencia1 li div{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: normal;
     color: #333333;
-    padding: 7px;
+    padding: 15px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -234,10 +234,10 @@
 }
 
 #lvDependencia2 li div{
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: normal;
     color: #333333;
-    padding: 7px;
+    padding: 15px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -246,14 +246,14 @@
 .lbltit{
     color: #333333;
     padding:5px;
-    font-size: 1.05em !Important;
+    font-size: 1.5em !Important;
     background-color: #f6f6f6;
     font-weight: bold !Important;;
 }
 .lblnormal{
     color: #333333;
     padding:5px;
-    font-size: 1.05em !Important;
+    font-size: 1.5em !Important;
 }
 
 #divFicha label{
