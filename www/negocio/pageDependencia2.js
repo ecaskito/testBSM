@@ -29,7 +29,7 @@ function inicioPageDependencia2(){
 function leeXMLDependencia2() {
     $.ajax({
         type: "GET",
-        url: "tablas/Dependencia2.xml",
+        url: "tablas/dependencia2.xml",
         dataType: "xml",
         success: function (xml) {
             $(xml).find('Dependencia2').each(function () {

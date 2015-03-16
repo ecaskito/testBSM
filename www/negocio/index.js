@@ -42,7 +42,7 @@ function ubicacion_clik(){
     }
 }
 function activo_clik(){
-
+    abrirPagina("pageFamilia");
 }
 function inventario_clik(){
 
@@ -73,6 +73,24 @@ function abrirPagina(sPag) {
                 break;
             case 'pageDependencia2':
                 $.doTimeout(1500, inicioPageDependencia2());
+                break;
+            case 'pageFamilia':
+                $.doTimeout(1500, inicioPageFamilia());
+                break;
+            case 'pageSubFamilia':
+                $.doTimeout(1500, inicioPageSubFamilia());
+                break;
+            case 'pageEquipo':
+                $.doTimeout(1500, inicioPageEquipo());
+                break;
+            case 'pageElemento1':
+                $.doTimeout(1500, inicioPageElemento1());
+                break;
+            case 'pageElemento2':
+                $.doTimeout(1500, inicioPageElemento2());
+                break;
+            case 'pageActivo':
+                $.doTimeout(1500, inicioPageActivo());
                 break;
         }
 }

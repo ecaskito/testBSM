@@ -17,6 +17,8 @@ function inicioPageUbicacion(){
     $('#labelUBICACION_SIDDEPENDENCIA2').text(_sIdDependencia2);
     $('#labelUBICACION_SDEPENDENCIA2').text(_sDependencia2);
 
+    $('#labelUBICACION_ESTAT').text(_sUbicacionEstado);
+
 }
 
 
@@ -29,6 +31,8 @@ function ObtenerUbicacion(){
                     if(_iIdDependencia2 ==_dicUbicacionesDep2[v_id]) {
                         _iIdUbicacion=v_id;
                         _sIdUbicacion = _dicUbicacionesCodigo[v_id];
+                        _sUbicacionEstado=_dicUbicacionesEstado[v_id];
+
                     }
                 }
             }

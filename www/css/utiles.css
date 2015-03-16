@@ -154,6 +154,28 @@
     text-transform: none;
 }
 
+#lvFamilia{
+    list-style: none;
+    margin: 0.5em;
+    padding: 0em;
+}
+#lvFamilia li{
+    padding: 0px;
+    color: #333333;
+    height: 60px;
+    font-size: 1.1em;
+}
+
+#lvFamilia li a{
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #333333;
+    padding-left: 2px;
+    padding-right: 2px;
+    background-color: #fefefe;
+    text-transform: none;
+}
+
 .divtitubicacion{
     background-color:#f6f6f6;
     color: #333333;
@@ -258,10 +280,111 @@
     border-bottom: 1px solid #dddddd;
 }
 
+#lvSubFamilia{
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+#lvSubFamilia li{
+    padding: 0px;
+    color: #333333;
+    font-size: 1.1em;
+}
+
+#lvSubFamilia li div:hover{
+    background-color: rgba(26,154,220,0.3);
+}
+
+#lvSubFamilia li div{
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #333333;
+    padding: 15px 7px;
+    text-transform: none;
+    background-color: #fefefe;
+    border-bottom: 1px solid #dddddd;
+}
+
+#lvEquipo{
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+#lvEquipo li{
+    padding: 0px;
+    color: #333333;
+    font-size: 1.1em;
+}
+
+#lvEquipo li div:hover{
+    background-color: rgba(26,154,220,0.3);
+}
+
+#lvEquipo li div{
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #333333;
+    padding: 15px 7px;
+    text-transform: none;
+    background-color: #fefefe;
+    border-bottom: 1px solid #dddddd;
+}
+
+#lvElemento1{
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+#lvElemento1 li{
+    padding: 0px;
+    color: #333333;
+    font-size: 1.1em;
+}
+
+#lvElemento1 li div:hover{
+    background-color: rgba(26,154,220,0.3);
+}
+
+#lvElemento1 li div{
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #333333;
+    padding: 15px 7px;
+    text-transform: none;
+    background-color: #fefefe;
+    border-bottom: 1px solid #dddddd;
+}
+
+#lvElemento2{
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+#lvElemento2 li{
+    padding: 0px;
+    color: #333333;
+    font-size: 1.1em;
+}
+
+#lvElemento2 li div:hover{
+    background-color: rgba(26,154,220,0.3);
+}
+
+#lvElemento2 li div{
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #333333;
+    padding: 15px 7px;
+    text-transform: none;
+    background-color: #fefefe;
+    border-bottom: 1px solid #dddddd;
+}
+
+
 .lbltit{
     color: #16648d ;
     padding:5px;
-    font-size: 1.15em !Important;
+    font-size: 0.9em !Important;
     background-color: #f6f6f6;
     font-weight: bold !Important;;
 }
@@ -271,7 +394,7 @@
 .lblnormal{
     color: #333333;
     padding:5px;
-    font-size: 1.2em !Important;
+    font-size: 0.9em !Important;
 }
 #divDatosUbicacion a{
     color: #16648d ;

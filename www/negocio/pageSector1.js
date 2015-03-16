@@ -22,7 +22,7 @@ function inicioPageSector1(){
 function leeXMLSector1() {
     $.ajax({
         type: "GET",
-        url: "tablas/Sector1.xml",
+        url: "tablas/sector1.xml",
         dataType: "xml",
         success: function (xml) {
             $(xml).find('Sector1').each(function () {

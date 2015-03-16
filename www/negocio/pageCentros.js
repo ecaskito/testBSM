@@ -16,7 +16,7 @@ function inicioPageCentros(){
 function leeXMLCentro() {
     $.ajax({
         type: "GET",
-        url: "tablas/Centro.xml",
+        url: "tablas/centro.xml",
         dataType: "xml",
         success: function (xml) {
             $(xml).find('Centro').each(function () {
@@ -92,8 +92,7 @@ function mostrarSector1(p_id){
     _dicUbicacionesSector2= {};
     _dicUbicacionesDep1= {};
     _dicUbicacionesDep2= {};
-    _dicUbicacionesIni= {};
-    _dicUbicacionesFin= {};
+    _dicUbicacionesEstado= {};
 
     leeXMLUbicacion();
     abrirPagina("pageSector1");
@@ -104,7 +103,7 @@ function mostrarSector1(p_id){
 function leeXMLUbicacion() {
     $.ajax({
         type: "GET",
-        url: "tablas/Ubicacion.xml",
+        url: "tablas/ubicacion.xml",
         dataType: "xml",
         success: function (xml) {
             $(xml).find('Ubicacion').each(function () {
@@ -116,10 +115,7 @@ function leeXMLUbicacion() {
                     _dicUbicacionesSector2[$(this).find('IIDUBICACION').text()]= $(this).find('IIDSECTOR2').text();
                     _dicUbicacionesDep1[$(this).find('IIDUBICACION').text()]= $(this).find('IIDDEPENDENCIA1').text();
                     _dicUbicacionesDep2[$(this).find('IIDUBICACION').text()]= $(this).find('IIDDEPENDENCIA2').text();
-                    _dicUbicacionesIni[$(this).find('IIDUBICACION').text()]= $(this).find('DFINIINV').text();
-                    _dicUbicacionesFin[$(this).find('IIDUBICACION').text()]= $(this).find('DFFININV').text();
-
-
+                    _dicUbicacionesEstado[$(this).find('IIDUBICACION').text()]= $(this).find('SESTADOINV').text();
                 }
             });
         },

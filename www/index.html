@@ -53,6 +53,13 @@
         <script src="negocio/pageDependencia2.js" type="text/javascript"></script>
         <script src="negocio/pageUbicacion.js" type="text/javascript"></script>
 
+        <script src="negocio/pageFamilia.js" type="text/javascript"></script>
+        <script src="negocio/pageSubFamilia.js" type="text/javascript"></script>
+        <script src="negocio/pageEquipo.js" type="text/javascript"></script>
+        <script src="negocio/pageElemento1.js" type="text/javascript"></script>
+        <script src="negocio/pageElemento2.js" type="text/javascript"></script>
+        <script src="negocio/pageActivo.js" type="text/javascript"></script>
+
         <title>BSMGIN test</title>
     </head>
     <body style="margin: auto; width: 100%;">
@@ -282,6 +289,20 @@
                             </table>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="lbltit" >
+                                <div style="float: left">ESTAT</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td ><label class="lblnormal" id="labelUBICACION_ESTAT"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
                 </table>
             </div>
 
@@ -423,7 +444,7 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
+                        <td align="center" style="font-size: 1.1em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
                             <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
                                 <img src="img/nri_01.png" height="30px">
                                 <div style="color: #16648d ;text-decoration: none">Ubicació</div>
@@ -582,7 +603,418 @@
         </div>
     </div>
 
-        <script type="text/javascript" src="cordova.js"></script>
+
+    <div data-role="page" id="pageActivo">
+        <div data-role="header" data-theme="c" style="border: 0px">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="left"><div class="mi-util">
+                <a href="#leftmenu1"><img alt="" src="css/themes/Rojos/images/icons-png/bars-white.png" width="20" /></a>
+            </div></td><td width="90%" style="text-align: center">
+                <h3 style="margin: 0em">
+                    Nou Registre Inventari
+                </h3></td></tr></table>
+        </div>
+        <div data-role="content" data-theme="c" style="padding:0">
+            <div  style="background-color: #f6f6f6">
+                <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
+                    <tr>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
+                                <img src="img/nri_01_gris.png" height="30px">
+                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
+                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
+                                <img src="img/nri_02.png" height="30px">
+                                <div style="color: #16648d;text-decoration: none">Actiu</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
+                                <img src="img/nri_03_gris.png" height="30px">
+                                <div style="color: #666666;text-decoration: none">Inventari</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div id="divDatosActivo" style="padding:30px 10px 5px 10px;font-size: 1.2em;">
+                <table width="100%" cellpadding="1" cellspacing="1">
+                    <tr>
+                        <td class="lbltit">
+                            <a href="" onclick="abrirPagina('pageFamilia');">
+                                <div style="float: left">ACTIU</div>
+                                <img style="float: right" src="img/edit-black.png" alt="" width="20">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td ><label class="lblnormal" id="labelACTIVO_SIDACTIVO"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td  class="lbltit"  >
+                            <a href="" onclick="abrirPagina('pageFamilia');">
+                                <div>
+                                    <div style="float: left">FAMILIA</div>
+                                    <img style="float: right" src="img/edit-black.png" alt="" width="20">
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td  style="width: 10%"><label class="lblnormal" id="labelACTIVO_SIDFAMILIA"></label></td>
+                                    <td><label class="lblnormal" id="labelACTIVO_SFAMILIA"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lbltit" >
+                            <a href="" onclick="abrirSubFamilia();">
+
+                                <div style="float: left">SUBFAMILIA</div>
+                                <img style="float: right" src="img/edit-black.png" alt="" width="20">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td style="width: 10%" ><label class="lblnormal" id="labelACTIVO_SIDSUBFAMILIA"></label></td>
+                                    <td ><label class="lblnormal" id="labelACTIVO_SSUBFAMILIA"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lbltit" >
+                            <a href="" onclick="abrirEquipo();">
+
+                                <div style="float: left">EQUIP</div>
+                                <img style="float: right" src="img/edit-black.png" alt="" width="20">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td style="width: 10%" ><label class="lblnormal" id="labelACTIVO_SIDEQUIPO"></label></td>
+                                    <td ><label class="lblnormal" id="labelACTIVO_SEQUIPO"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lbltit" >
+                            <a href="" onclick="abrirElemento1();">
+                                <div style="float: left">ELEMENT 1</div>
+                                <img style="float: right" src="img/edit-black.png" alt="" width="20">
+
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td style="width: 10%" ><label class="lblnormal" id="labelACTIVO_SIDELEMENTO1"></label></td>
+                                    <td ><label class="lblnormal" id="labelACTIVO_SELEMENTO1"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lbltit" >
+                            <a href="" onclick="abrirElemento2();">
+                                <div style="float: left">ELEMENT2 2</div>
+                                <img style="float: right" src="img/edit-black.png" alt="" width="20">
+
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td style="width: 10%" ><label class="lblnormal" id="labelACTIVO_SIDELEMENTO2"></label></td>
+                                    <td ><label class="lblnormal" id="labelACTIVO_SELEMENTO2"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="lbltit" >
+                            <div style="float: left">ETIQUETABLE</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table width="100%" cellpadding="1" cellspacing="1">
+                                <tr>
+                                    <td ><label class="lblnormal" id="labelACTIVO_ETIQUETABLE"></label></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="pageFamilia">
+        <div data-role="header" data-theme="c" style="border: 0px">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="left"><div class="mi-util">
+                <a href="#leftmenu1"><img alt="" src="css/themes/Rojos/images/icons-png/bars-white.png" width="20" /></a>
+            </div></td><td width="90%" style="text-align: center">
+                <h3 style="margin: 0em">
+                    Nou Registre Inventari
+                </h3></td></tr></table>
+        </div>
+        <div data-role="content" data-theme="c" style="padding:0">
+            <div  style="background-color: #f6f6f6">
+                <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
+                    <tr>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
+                                <img src="img/nri_01_gris.png" height="30px">
+                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
+                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
+                                <img src="img/nri_02.png" height="30px">
+                                <div style="color: #16648d;text-decoration: none">Actiu</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
+                                <img src="img/nri_03_gris.png" height="30px">
+                                <div style="color: #666666;text-decoration: none">Inventari</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="margin-top: 0; vertical-align: top;">
+                <div class="content-primary" >
+                    <ul id="lvFamilia" >
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="pageSubFamilia">
+        <div data-role="header" data-theme="c" style="border: 0px">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="left"><div class="mi-util">
+                <a href="#leftmenu1"><img alt="" src="css/themes/Rojos/images/icons-png/bars-white.png" width="20" /></a>
+            </div></td><td width="90%" style="text-align: center">
+                <h3 style="margin: 0em">
+                    Nou Registre Inventari
+                </h3></td></tr></table>
+        </div>
+        <div data-role="content" data-theme="c" style="padding:0">
+            <div  style="background-color: #f6f6f6">
+                <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
+                    <tr>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
+                                <img src="img/nri_01_gris.png" height="30px">
+                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
+                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
+                                <img src="img/nri_02.png" height="30px">
+                                <div style="color: #16648d;text-decoration: none">Actiu</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
+                                <img src="img/nri_03_gris.png" height="30px">
+                                <div style="color: #666666;text-decoration: none">Inventari</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="color: #333333;padding:5px;font-size: 1.1em;font-weight: bold">
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelSUBFAMILIA_FAMILIA"></label>
+            </div>
+            <div style="margin: 5px 20px; vertical-align: top;">
+                <div class="content-primary" >
+                    <div class="divtitubicacion">SUBFAMILIA</div>
+                    <ul id="lvSubFamilia">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="pageEquipo">
+        <div data-role="header" data-theme="c" style="border: 0px">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="left"><div class="mi-util">
+                <a href="#leftmenu1"><img alt="" src="css/themes/Rojos/images/icons-png/bars-white.png" width="20" /></a>
+            </div></td><td width="90%" style="text-align: center">
+                <h3 style="margin: 0em">
+                    Nou Registre Inventari
+                </h3></td></tr></table>
+        </div>
+        <div data-role="content" data-theme="c" style="padding:0">
+            <div  style="background-color: #f6f6f6">
+                <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
+                    <tr>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
+                                <img src="img/nri_01_gris.png" height="30px">
+                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
+                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
+                                <img src="img/nri_02.png" height="30px">
+                                <div style="color: #16648d;text-decoration: none">Actiu</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
+                                <img src="img/nri_03_gris.png" height="30px">
+                                <div style="color: #666666;text-decoration: none">Inventari</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="color: #333333;padding:5px;font-size: 1.1em;font-weight: bold">
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelEQUIPO_FAMILIA"></label>
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelEQUIPO_SUBFAMILIA"></label>
+            </div>
+            <div style="margin: 5px 20px; vertical-align: top;">
+                <div class="content-primary" >
+                    <div class="divtitubicacion">EQUIP</div>
+                    <ul id="lvEquipo">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div data-role="page" id="pageElemento1">
+        <div data-role="header" data-theme="c" style="border: 0px">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="left"><div class="mi-util">
+                <a href="#leftmenu1"><img alt="" src="css/themes/Rojos/images/icons-png/bars-white.png" width="20" /></a>
+            </div></td><td width="90%" style="text-align: center">
+                <h3 style="margin: 0em">
+                    Nou Registre Inventari
+                </h3></td></tr></table>
+        </div>
+        <div data-role="content" data-theme="c" style="padding:0">
+            <div  style="background-color: #f6f6f6">
+                <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
+                    <tr>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
+                                <img src="img/nri_01_gris.png" height="30px">
+                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
+                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
+                                <img src="img/nri_02.png" height="30px">
+                                <div style="color: #16648d;text-decoration: none">Actiu</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
+                                <img src="img/nri_03_gris.png" height="30px">
+                                <div style="color: #666666;text-decoration: none">Inventari</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="color: #333333;padding:5px;font-size: 1.1em;font-weight: bold">
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelELEMENTO1_FAMILIA"></label>
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelELEMENTO1_SUBFAMILIA"></label>
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelELEMENTO1_EQUIPO"></label>
+            </div>
+            <div style="margin: 5px 20px; vertical-align: top;">
+                <div class="content-primary" >
+                    <div class="divtitubicacion">ELEMENT 1</div>
+                    <ul id="lvElemento1">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div data-role="page" id="pageElemento2">
+        <div data-role="header" data-theme="c" style="border: 0px">
+            <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="left"><div class="mi-util">
+                <a href="#leftmenu1"><img alt="" src="css/themes/Rojos/images/icons-png/bars-white.png" width="20" /></a>
+            </div></td><td width="90%" style="text-align: center">
+                <h3 style="margin: 0em">
+                    Nou Registre Inventari
+                </h3></td></tr></table>
+        </div>
+        <div data-role="content" data-theme="c" style="padding:0">
+            <div  style="background-color: #f6f6f6">
+                <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
+                    <tr>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
+                                <img src="img/nri_01_gris.png" height="30px">
+                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
+                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
+                                <img src="img/nri_02.png" height="30px">
+                                <div style="color: #16648d;text-decoration: none">Actiu</div>
+                            </a>
+                        </td>
+                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
+                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
+                                <img src="img/nri_03_gris.png" height="30px">
+                                <div style="color: #666666;text-decoration: none">Inventari</div>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div style="color: #333333;padding:5px;font-size: 1.1em;font-weight: bold">
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelELEMENTO2_FAMILIA"></label>
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelELEMENTO2_SUBFAMILIA"></label>
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelELEMENTO2_EQUIPO"></label>
+                <label style="color: #333333;padding:5px;font-size: 1.1em;" id="labelELEMENTO2_ELEMENTO1"></label>
+            </div>
+            <div style="margin: 5px 20px; vertical-align: top;">
+                <div class="content-primary" >
+                    <div class="divtitubicacion">ELEMENT 2</div>
+                    <ul id="lvElemento2">
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="negocio/index.js"></script>
         <script type="text/javascript">
             app.initialize();

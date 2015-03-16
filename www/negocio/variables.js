@@ -17,8 +17,8 @@ var _dicUbicacionesSector1= {};
 var _dicUbicacionesSector2= {};
 var _dicUbicacionesDep1= {};
 var _dicUbicacionesDep2= {};
-var _dicUbicacionesIni= {};
-var _dicUbicacionesFin= {};
+var _dicUbicacionesEstado= {};
+
 
 var _tempIdSector1=null;
 var _dicSector1Codigo= {};
@@ -55,3 +55,68 @@ var _sDependencia2 = null;
 
 var _iIdUbicacion = null;
 var _sIdUbicacion = null;
+var _sUbicacionEstado=null;
+
+
+var _dicFamiliaImagen= {};
+var _dicFamiliaNombre= {};
+var _dicFamiliaCodigo= {};
+
+var _iIdFamilia = null;
+var _sIdFamilia = null;
+var _sFamilia = null;
+
+
+var _dicActivoCodigo= {};
+var _dicActivoFamilia= {};
+var _dicActivoSubFamilia= {};
+var _dicActivoEquipo= {};
+var _dicActivoElemento1= {};
+var _dicActivoElemento2= {};
+var _dicActivoElemento3= {};
+var _dicActivoFoto= {};
+var _dicActivoEtiquetable= {};
+
+
+var _tempIdSubFamilia=null;
+var _dicSubFamiliaCodigo= {};
+var _dicSubFamiliaNombre= {};
+
+
+var _iIdSubFamilia = null;
+var _sIdSubFamilia = null;
+var _sSubFamilia = null;
+
+var _tempIdEquipo=null;
+var _dicEquipoCodigo= {};
+var _dicEquipoNombre= {};
+
+var _iIdEquipo = null;
+var _sIdEquipo = null;
+var _sEquipo = null;
+
+var _tempIdElemento1=null;
+var _dicElemento1Codigo= {};
+var _dicElemento1Nombre= {};
+
+var _iIdElemento1 = null;
+var _sIdElemento1 = null;
+var _sElemento1 = null;
+
+var _tempIdElemento2=null;
+var _dicElemento2Codigo= {};
+var _dicElemento2Definicion= {};
+var _dicElemento2Modelo= {};
+var _dicElemento2Marca= {};
+var _dicElemento2Foto= {};
+
+var _iIdElemento2 = null;
+var _sIdElemento2 = null;
+var _sElemento2Definicion = null;
+var _sElemento2Marca = null;
+var _sElemento2Modelo = null;
+var _sElemento2Foto = null;
+
+var _iIdActivo = null;
+var _sIdActivo = null;
+//var _sUbicacionEstado=null;
