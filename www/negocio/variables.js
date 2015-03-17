@@ -121,3 +121,21 @@ var _iIdActivo = null;
 var _sIdActivo = null;
 var _sActivoFoto=null;
 var _sActivoEtiqueta=null;
+
+var _sInventarioDefinicion="";
+var _sInventarioMarca="";
+var _sInventarioModelo="";
+var _sInventarioEstado="";
+var _sInventarioNumSerie="";
+var _sInventarioEtiqueta="";
+var _sInventarioDesignacion="";
+var _sInventarioNumero="";
+var _sInventarioObservaciones="";
+var _sInventarioFaltanDatos="";
+var _sInventarioIncidencia="";
+var _sInventarioFoto="";
+var _sInventarioCoordX="";
+var _sInventarioCoordY="";
+
+var _tempInventarioLabelText=null;
+var _tempInventarioCampoText=null;

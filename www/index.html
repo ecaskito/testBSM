@@ -27,11 +27,11 @@
         <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
         <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 
-        <link href="css/utiles.css" rel="stylesheet" />
         <link href="css/themes/Rojos/rojo.css" rel="stylesheet" />
         <link href="css/themes/Rojos/jquery.mobile.icons.min.css" rel="stylesheet" />
         <link href="css/jquery.mobile.structure-1.4.5.min.css" rel="stylesheet" type="text/css" />
         <link href="css/jquery.mobile.datebox-1.0.1.min.css" rel="stylesheet" type="text/css" />
+        <link href="css/utiles.css" rel="stylesheet" />
 
         <script src="js/jquery-1.11.1.min.js" type="text/javascript"></script>
         <script src="js/jquery.json-2.2.min.js" type="text/javascript"></script>
@@ -1070,50 +1070,51 @@
             </div>
             <div id="divDatosInventario" style="padding:30px 10px 5px 10px;font-size: 1.2em;">
                 <table width="100%" cellpadding="1" cellspacing="1">
-                    <tr>
-                        <td>
-                            <table>
                                 <tr>
-                                    <td>UBICACIÓ:</td>
-                                    <td></td>
+                                    <td width="10%">UBICACIÓ:</td>
+                                    <td  onclick="ubicacion_clik();"><label class="lblnormalBorde" id="labelINVENTARIO_SIDUBICACION"></label></td>
+                                    <td style="width: 20px" valign="top"  onclick="ubicacion_clik();"><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                                 </tr>
                                 <tr>
                                     <td>ACTIU:</td>
-                                    <td></td>
+                                    <td  onclick="activo_clik();"><label class="lblnormalBorde" id="labelINVENTARIO_SIDACTIVO"></label></td>
+                                    <td style="width: 20px" valign="top"  onclick="activo_clik();"><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                                 </tr>
                                 <tr>
                                     <td>DEFINICIÓ:</td>
-                                    <td></td>
+                                    <td onclick="AbrirTexto('DEFINICIÓ','labelINVENTARIO_SDEFINICION');"><label class="lblnormalBorde" id="labelINVENTARIO_SDEFINICION"></label></td>
+                                    <td onclick="AbrirTexto('DEFINICIÓ','labelINVENTARIO_SDEFINICION');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                                 </tr>
                                 <tr>
                                     <td>MARCA:</td>
-                                    <td></td>
+                                    <td onclick="AbrirTexto('MARCA','labelINVENTARIO_SMARCA');"><label class="lblnormalBorde" id="labelINVENTARIO_SMARCA"></label></td>
+                                    <td onclick="AbrirTexto('MARCA','labelINVENTARIO_SMARCA');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                                 </tr>
                                 <tr>
                                     <td>MODEL:</td>
-                                    <td></td>
+                                    <td onclick="AbrirTexto('MODEL','labelINVENTARIO_SMODELO');"><label class="lblnormalBorde" id="labelINVENTARIO_SMODELO"></label></td>
+                                    <td onclick="AbrirTexto('MODEL','labelINVENTARIO_SMODELO');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                                 </tr>
-                            </table>
-                        </td>
-                    </tr>
                     </table>
-                <div  style="padding-left:5px;padding-right: 5px">
-                    <table>
+                    <table width="100%" cellpadding="1" cellspacing="1">
                         <tr>
-                            <td>ESTAT:</td>
+                            <td  width="10%">ESTAT:</td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>N.SERIE:</td>
-                            <td></td>
+                            <td onclick="AbrirTexto('N.SERIE','labelINVENTARIO_SNUMSERIE');"><label class="lblnormalBorde" id="labelINVENTARIO_SNUMSERIE"></label></td>
+                            <td onclick="AbrirTexto('N.SERIE','labelINVENTARIO_SNUMSERIE');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                         </tr>
                         <tr>
                             <td>ETIQUETA:</td>
-                            <td></td>
+                            <td onclick="AbrirTexto('ETIQUETA','labelINVENTARIO_SETIQUETA');"><label class="lblnormalBorde" id="labelINVENTARIO_SETIQUETA"></label></td>
+                            <td onclick="AbrirTexto('ETIQUETA','labelINVENTARIO_SETIQUETA');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                         </tr>
                         <tr>
                             <td>DESIGNACIÓ:</td>
-                            <td></td>
+                            <td onclick="AbrirTexto('DESIGNACIÓ','labelINVENTARIO_SDESIGNACION');"><label class="lblnormalBorde" id="labelINVENTARIO_SDESIGNACION"></label></td>
+                            <td onclick="AbrirTexto('DESIGNACIÓ','labelINVENTARIO_SDESIGNACION');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                         </tr>
                         <tr>
                             <td>NUM.:</td>
@@ -1121,10 +1122,10 @@
                         </tr>
                         <tr>
                             <td>OBSERV.:</td>
-                            <td></td>
+                            <td onclick="AbrirTexto('OBSERVACIONS','labelINVENTARIO_SOBSERVACIONES');"><label class="lblnormalBorde" id="labelINVENTARIO_SOBSERVACIONES"></label></td>
+                            <td onclick="AbrirTexto('OBSERVACIONS','labelINVENTARIO_SOBSERVACIONES');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                         </tr>
                     </table>
-                    </div>
                 <div  style="padding-left:5px;padding-right: 5px">
                     <input id="check_FaltanDatos" name="check_FaltanDatos" class="custom" type="checkbox"
                            data-mini="true" data-inline="true" style="text-align: right;">
@@ -1142,8 +1143,8 @@
 
                     </div>
                     <div class="divCargarDatos"  style="height: 80%;width: 90%;left: 5%;top: 5%" >
-                        <label class="lblnormal" id="labelINVENTARIOTEXTO"></label>
-                                    <textarea name="textareaInventario" id="textareaInventario" rows="14" style="top: 2%;margin-left: 2%;margin-right: 2%;width: 96%"
+                        <label style="margin: 0px" class="lblTitulo" id="labelINVENTARIOTEXTO"></label>
+                                    <textarea name="textareaInventario" id="textareaInventario"  style="top: 2%;margin-left: 2%;margin-right: 2%;width: 96%"
                                             ></textarea>
                         <table width="100%">
                             <tr>

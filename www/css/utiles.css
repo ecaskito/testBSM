@@ -396,6 +396,46 @@
     padding:5px;
     font-size: 0.9em !Important;
 }
+.lblnormalBorde{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333333;
+    background-color: #f3f3f3;
+    padding:5px;
+    margin: 0px;
+    height: 1.2em;
+    font-size: 0.9em !Important;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    -moz-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 95%;
+}
+.lblTitulo{
+    color: #ffffff;
+    background-color: #1a9adc;
+    padding:5px;
+    font-size: 0.9em !Important;
+    -webkit-box-shadow: 0 0 3px 0 #1a9adc /*{c-bar-background-color}*/ /*{c-active-background-color}*/;
+    -moz-box-shadow: 0 0 3px 0 #1a9adc /*{c-bar-background-color}*/ /*{c-active-background-color}*/;
+    box-shadow: 0 0 3px 0 #1a9adc /*{c-bar-background-color}*/ /*{c-active-background-color}*/;
+}
+
+.imgedit{
+    color: #333333;
+    background-color: #f3f3f3;
+    padding:5px;
+    margin: 0px;
+    height: 1.2em;
+    font-size: 0.9em !Important;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    -moz-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+}
+
 #divDatosUbicacion a{
     color: #16648d ;
     text-decoration: none;
@@ -466,7 +506,21 @@
     background-color: #ffffff;
     min-height: 130px;
     min-width: 180px;
-    -webkit-box-shadow: 0 0 12px #a80929 /*{c-active-background-color}*/;
-    -moz-box-shadow: 0 0 12px #a80929 /*{c-active-background-color}*/;
-    box-shadow: 0 0 12px #a80929 /*{c-active-background-color}*/;
+    -webkit-box-shadow: 0 0 12px #1a9adc /*{c-active-background-color}*/;
+    -moz-box-shadow: 0 0 12px #1a9adc /*{c-active-background-color}*/;
+    box-shadow: 0 0 12px #1a9adc /*{c-active-background-color}*/;
+}
+
+textarea{
+    text-transform:uppercase;
+    height: 80% !important;
+    margin: 0px;
+}
+textarea.ui-input-text {
+    height: 80% !important;
+    margin: 0px;
+}
+textarea.ui-input-text.ui-textinput-autogrow{
+    overflow: auto;
+    margin: 0px;
 }

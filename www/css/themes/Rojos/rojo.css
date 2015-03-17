@@ -639,8 +639,8 @@ html .ui-bar-c .ui-btn:hover,
 html .ui-body-c .ui-btn:hover,
 html body .ui-group-theme-c .ui-btn:hover,
 html head + body .ui-btn.ui-btn-c:hover {
-	background-color: #16648d  /*{c-bhover-background-color}*/;
-	border-color: #16648d  /*{c-bhover-border}*/;
+	background-color: rgba(26,154,220,0.3)  /*{c-bhover-background-color}*/;
+	border-color: #16648d /*{c-bhover-border}*/;
 	color: #16648d  /*{c-bhover-color}*/;
 	text-shadow: 0 /*{c-bhover-shadow-x}*/ 0px /*{c-bhover-shadow-y}*/ 0 /*{c-bhover-shadow-radius}*/ #16648d  /*{c-bhover-shadow-color}*/;
 }
@@ -650,7 +650,7 @@ html .ui-bar-c .ui-btn:active,
 html .ui-body-c .ui-btn:active,
 html body .ui-group-theme-c .ui-btn:active,
 html head + body .ui-btn.ui-btn-c:active {
-	background-color: #16648d  /*{c-bdown-background-color}*/;
+	background-color:rgba(26,154,220,0.3)  /*{c-bdown-background-color}*/;
 	border-color: #16648d  /*{c-bdown-border}*/;
 	color: #16648d  /*{c-bdown-color}*/;
 	text-shadow: 0 /*{c-bdown-shadow-x}*/ 0px /*{c-bdown-shadow-y}*/ 0 /*{c-bdown-shadow-radius}*/ #16648d  /*{c-bdown-shadow-color}*/;
