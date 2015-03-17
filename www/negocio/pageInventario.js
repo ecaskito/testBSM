@@ -3,6 +3,7 @@ function inicioPageInventario(){
     $('#divInventarioTexto').hide();
     $('#divInventarioNumero').hide();
     $('#divInventarioLista').hide();
+    $('#trIncidencias').hide();
 
     if (_sIdActivo ==null || _sIdActivo==""){
         _sInventarioDefinicion="";
@@ -30,6 +31,14 @@ function inicioPageInventario(){
     $('#labelINVENTARIO_ICANTIDAD').text('1');
     $('#labelINVENTARIO_SNUMSERIE').text(' ');
 
+    var imagen = document.getElementById('imgInventarioFoto');
+    if (_sActivoFoto == '') {
+        imagen.src = "img/sinFoto.png";
+    }
+    else {
+        imagen.src = "data:image/jpeg;base64," + _sActivoFoto;
+    }
+
 }
 
 
@@ -43,10 +52,10 @@ function AbrirTexto(p_elemento,p_label){
 
     $('#labelINVENTARIOTEXTO').text(p_elemento);
 
-    $('#textareaInventario').text('');
+    $('#textareaInventario').val('');
     var v_texto='';
-    v_texto=$('#'+p_label).val();
-    $('#textareaInventario').text(v_texto);
+    v_texto=$('#'+p_label).text();
+    $('#textareaInventario').val(v_texto);
 
     $('#divInventarioTexto').show();
 
@@ -78,8 +87,8 @@ function AbrirNumero(p_elemento,p_label){
     $('#labelINVENTARIONUMERO').text(p_elemento);
 
     var v_texto='1';
-    v_texto=$('#'+p_label).val();
-    $('#number').text(v_texto);
+    v_texto=$('#'+p_label).tex();
+    $('#number').val(v_texto);
 
     $('#divInventarioNumero').show();
 
@@ -129,4 +138,33 @@ function CancelarLista(){
     _tempInventarioCampoText=null;
     $('#divInventarioLista').hide();
 
+}
+
+function MostrarIncidencia(){
+    $('#trIncidencias').show();
+    $('#divFatanDatos').css("background-color","rgba(26,154,220,0.3)");
+    $('#divNoFatanDatos').css("background-color","#f3f3f3");
+}
+
+function OcultarIncidencia(){
+    $('#trIncidencias').hide();
+    $('#divFatanDatos').css("background-color","#f3f3f3");
+    $('#divNoFatanDatos').css("background-color","rgba(26,154,220,0.3)");
+}
+
+
+function abrirZoomFotoInventario(){
+    _sZoomFotoOrigen='Inventario';
+    if (_sActivoFoto!=''){
+        _sZoomFotoOrigen='InventarioActivo';
+        _sZoomFoto=_sActivoFoto;
+    }
+    else if (_sInventarioFoto != ''){
+        _sZoomFoto=_sInventarioFoto;
+    }
+    else{
+        _sZoomFoto='';
+    }
+
+    abrirPagina("pageZoomFoto");
 }

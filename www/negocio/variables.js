@@ -139,3 +139,7 @@ var _sInventarioCoordY="";
 
 var _tempInventarioLabelText=null;
 var _tempInventarioCampoText=null;
+
+
+var _sZoomFoto='';
+var _sZoomFotoOrigen='';

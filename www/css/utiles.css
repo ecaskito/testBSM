@@ -550,3 +550,32 @@ textarea.ui-input-text.ui-textinput-autogrow{
     overflow: auto;
     margin: 0px;
 }
+
+.divSelect{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333333;
+    background-color: rgba(26,154,220,0.3);
+    padding:5px;
+    font-size: 0.9em !Important;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    -moz-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    width: 40px;
+    text-align: center;
+}
+.divNoSelect{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333333;
+    background-color: #f3f3f3;
+    padding:5px;
+    font-size: 0.9em !Important;
+    border: 1px solid #dddddd;
+    -webkit-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    -moz-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
+    width: 40px;
+    text-align: center;
+}

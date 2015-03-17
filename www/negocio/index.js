@@ -27,6 +27,48 @@ function deviceReady() {
 
 }
 
+function handleBackButton() {
+    try {
+        //alert($.mobile.activePage.attr('id'));
+        if ($.mobile.activePage.attr('id') == 'pageIndex') {
+            if (navigator.app) {
+                navigator.app.exitApp();
+            } else if (navigator.device) {
+                navigator.device.exitApp();
+            }
+        }
+        else if ($.mobile.activePage.attr('id') == 'pageTipoIncidencia') {
+            if (navigator.app) {
+                navigator.app.exitApp();
+            } else if (navigator.device) {
+                navigator.device.exitApp();
+            }
+        }
+        else if ($.mobile.activePage.attr('id') == 'pageDatosIncidencia') {
+            abrirPagina("pageTipoIncidencia", false);
+        }
+        else if ($.mobile.activePage.attr('id') == 'pageInfoEnvio') {
+            abrirPagina("pageTipoIncidencia", false);
+        }
+        else if ($.mobile.activePage.attr('id') == 'pageConsultaIncidencias') {
+            abrirPagina("pageTipoIncidencia", false);
+        }
+        else{
+            if (navigator.app) {
+                navigator.app.backHistory();
+            } else if (navigator.device) {
+                navigator.device.backHistory();
+            }
+            else {
+                window.history.back();
+            }
+        }
+    }
+    catch (ex) {
+        //alert(ex.message);
+    }
+}
+
 function mostrarCalsif(p_clasif){
 
     _iIdClasifCentro=p_clasif;
@@ -100,6 +142,9 @@ function abrirPagina(sPag) {
                 break;
             case 'pageInventario':
                 $.doTimeout(1500, inicioPageInventario());
+                break;
+            case 'pageZoomFoto':
+                $.doTimeout(1500, inicioPageZoomFoto());
                 break;
         }
 }

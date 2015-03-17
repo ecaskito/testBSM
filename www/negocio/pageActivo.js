@@ -91,3 +91,9 @@ function abrirElemento2(){
     }
 }
 
+
+function abrirZoomFotoActivo(){
+    _sZoomFotoOrigen='Activo';
+    _sZoomFoto=_sActivoFoto;
+    abrirPagina("pageZoomFoto");
+}
