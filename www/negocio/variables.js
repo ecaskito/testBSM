@@ -119,4 +119,5 @@ var _sElemento2Foto = null;
 
 var _iIdActivo = null;
 var _sIdActivo = null;
-//var _sUbicacionEstado=null;
+var _sActivoFoto=null;
+var _sActivoEtiqueta=null;

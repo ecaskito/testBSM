@@ -14,8 +14,23 @@ function inicioPageActivo(){
     $('#labelACTIVO_SIDELEMENTO1').text(_sIdElemento1);
     $('#labelACTIVO_SELEMENTO1').text(_sElemento1);
 
-    $('#labelACTIVO_SIDELEMENTO2').text(_sIdElemento1);
+    $('#labelACTIVO_SIDELEMENTO2').text(_sIdElemento2);
     $('#labelACTIVO_SELEMENTO2').text(_sElemento2Definicion);
+
+    if (_sActivoEtiqueta=="0"){
+        $('#labelACTIVO_ETIQUETABLE').text("NO");
+    }
+    else{
+        $('#labelACTIVO_ETIQUETABLE').text("SI");
+    }
+
+    var imagen = document.getElementById('imgFoto');
+    if (_sActivoFoto == '') {
+        imagen.src = "img/sinFoto.png";
+    }
+    else {
+        imagen.src = "data:image/jpeg;base64," + _sActivoFoto;
+    }
 
     //$('#labelACTIVO_ESTAT').text(_sUbicacionEstado);
 
@@ -31,8 +46,8 @@ function ObtenerActivo(){
                     if(_iIdElemento2 ==_dicActivoElemento2[v_id]) {
                         _iIdActivo=v_id;
                         _sIdActivo = _dicActivoCodigo[v_id];
-                        //_sUbicacionEstado=_dicUbicacionesEstado[v_id];
-
+                        _sActivoEtiqueta=_dicActivoEtiquetable[v_id];
+                        _sActivoFoto=_dicActivoFoto[v_id];
                     }
                 }
             }

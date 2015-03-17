@@ -42,9 +42,15 @@ function ubicacion_clik(){
     }
 }
 function activo_clik(){
-    abrirPagina("pageFamilia");
+    if(_iIdActivo==null){
+        abrirPagina("pageFamilia");
+    }
+    else{
+        abrirPagina("pageActivo");
+    }
 }
 function inventario_clik(){
+    abrirPagina("pageInventario");
 
 }
 
@@ -91,6 +97,9 @@ function abrirPagina(sPag) {
                 break;
             case 'pageActivo':
                 $.doTimeout(1500, inicioPageActivo());
+                break;
+            case 'pageInventario':
+                $.doTimeout(1500, inicioPageInventario());
                 break;
         }
 }

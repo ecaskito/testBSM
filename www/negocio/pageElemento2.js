@@ -67,6 +67,8 @@ function cargaListaElemento2(){
         v_li +=" <table cellpadding='0' cellspacing='0' border='0' style='width: 100%;table-layout: fixed'>";
         v_li +=" <tr><td style='width:10%;'>"+_dicElemento2Codigo[v_id]+"</td>";
         v_li +=" <td style='width:90%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap' >"+_dicElemento2Definicion[v_id]+"</td></tr>";
+        v_li +=" <tr><td style='width:10%;'></td>";
+        v_li +=" <td style='width:90%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap' >"+_dicElemento2Marca[v_id]+", "+_dicElemento2Modelo[v_id]+"</td></tr>";
         v_li +=" </table></div>";
 
 
@@ -92,22 +94,14 @@ function cargaListaElemento2(){
 }
 
 function mostrarActivo(p_id){
-    alert('1');
     _iIdElemento2=p_id;
-    alert('2');
     _sIdElemento2=_dicElemento2Codigo[p_id];
-    alert('3');
     _sElemento2Definicion=_dicElemento2Definicion[p_id];
-    alert('4');
     _sElemento2Marca=_dicElemento2Marca[p_id];
-    alert('5');
     _sElemento2Modelo=_dicElemento2Modelo[p_id];
-    alert('6');
     _sElemento2Foto=_dicElemento2Foto[p_id];
 
-    alert('7');
     ObtenerActivo();
-    alert('8');
     abrirPagina("pageActivo");
 
 }
