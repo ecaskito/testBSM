@@ -380,6 +380,32 @@
     border-bottom: 1px solid #dddddd;
 }
 
+#lvInventarioLista{
+    list-style: none;
+    margin: 0em;
+    padding: 0em;
+}
+#lvInventarioLista li{
+    padding: 0px;
+    color: #333333;
+    font-size: 1.1em;
+}
+
+#lvInventarioLista li div:hover{
+    background-color: rgba(26,154,220,0.3);
+}
+
+#lvInventarioLista li div{
+    font-size: 1.1em;
+    font-weight: normal;
+    color: #333333;
+    padding: 15px 7px;
+    text-transform: none;
+    background-color: #fefefe;
+    border-bottom: 1px solid #dddddd;
+}
+
+
 
 .lbltit{
     color: #16648d ;

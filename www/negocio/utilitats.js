@@ -329,3 +329,15 @@ function cargaLetrasAbcdario(combo, sTitulo, nLetraSel){
     }
 }
 
+
+$('#plus').unbind('click').bind('click', function () {
+    var value = $('#number').val();
+    value++;
+    $('#number').val(value);
+});
+
+$('#minus').unbind('click').bind('click', function () {
+    var value = $('#number').val();
+    value--;
+    $('#number').val(value);
+});

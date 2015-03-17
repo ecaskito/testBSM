@@ -1095,11 +1095,10 @@
                                     <td onclick="AbrirTexto('MODEL','labelINVENTARIO_SMODELO');"><label class="lblnormalBorde" id="labelINVENTARIO_SMODELO"></label></td>
                                     <td onclick="AbrirTexto('MODEL','labelINVENTARIO_SMODELO');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                                 </tr>
-                    </table>
-                    <table width="100%" cellpadding="1" cellspacing="1">
                         <tr>
                             <td  width="10%">ESTAT:</td>
-                            <td></td>
+                            <td onclick="AbrirLista('ESTAT','labelINVENTARIO_SESTADO');"><label class="lblnormalBorde" id="labelINVENTARIO_SESTADO"></label></td>
+                            <td onclick="AbrirLista('ESTAT','labelINVENTARIO_SESTADO');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                         </tr>
                         <tr>
                             <td>N.SERIE:</td>
@@ -1118,7 +1117,8 @@
                         </tr>
                         <tr>
                             <td>NUM.:</td>
-                            <td></td>
+                            <td onclick="AbrirNumero('NUMERO ELEMENTS IGUALS','labelINVENTARIO_ICANTIDAD');"><label class="lblnormalBorde" style="text-align: right" id="labelINVENTARIO_ICANTIDAD"></label></td>
+                            <td onclick="AbrirNumero('NUMERO ELEMENTS IGUALS','labelINVENTARIO_ICANTIDAD');" style="width: 20px" valign="top" ><div class="imgedit"><img   src="img/edit-black.png" alt="" width="20"></div></td>
                         </tr>
                         <tr>
                             <td>OBSERV.:</td>
@@ -1137,6 +1137,45 @@
                     <a href="#" id="btnInventarioEnviar" onclick="EnviarInventario()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" style="width:90%;height:25px ;padding-top:10px;text-align:center;margin:auto">
                         Enviar
                     </a>
+                </div>
+                <div id="divInventarioNumero" class="fit-content" style="display: none">
+                    <div class="divCargar">
+
+                    </div>
+                    <div class="divCargarDatos"  style="height: 25%;min-height: 160px; width: 90%;left: 5%;top: 35%" >
+                        <label style="margin: 0px" class="lblTitulo" id="labelINVENTARIONUMERO"></label>
+                        <div >
+                            <table width="100%" cellspacing="1" cellpadding="1">
+                                <tr>
+                                    <td width="10%" style="text-align: center;font-weight: bold;font-size: 1.5em">
+                                        <button id="plus">+</button>
+                                    </td>
+                                    <td>
+                                        <input style="text-align: right" type="text" id="number" value="1" data-theme="c"  />
+
+                                    </td>
+                                    <td width="10%" style="text-align: center;font-weight: bold;font-size: 1.5em">
+                                        <button id="minus">-</button>
+                                    </td>
+                                </tr>
+                            </table>
+                                        </div>
+                                <table width="100%" cellspacing="1" cellpadding="1">
+                            <tr>
+                                <td style="width: 50%">
+                                    <a href="#" id="btnInventarioAceptarNumero" onclick="AceptarNumero()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" style="height:25px ;padding-top:10px;text-align:center;margin:auto">
+                                        Aceptar
+                                    </a>
+                                </td>
+                                <td  style="width: 50%">
+                                    <a href="#" id="btnInventarioCancelarNumero" onclick="CancelarNumero()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" style="height:25px ;padding-top:10px;text-align:center;margin:auto">
+                                        Cancel.lar
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
                 </div>
                 <div id="divInventarioTexto" class="fit-content" style="display: none">
                     <div class="divCargar">
@@ -1163,7 +1202,62 @@
 
                     </div>
                 </div>
+                <div id="divInventarioLista" class="fit-content" style="display: none">
+                    <div class="divCargar">
 
+                    </div>
+                    <div class="divCargarDatos"  style="height: 60%;width: 90%;left: 5%;top: 15%" >
+                        <label style="margin: 0px" class="lblTitulo" id="labelINVENTARIOLISTA"></label>
+                        <ul id="lvInventarioLista" style="top: 2%;margin-left: 2%;margin-right: 2%;width: 96%">
+                            <li id="fila_1">
+                                <a href="" onclick="AceptarLista('ESTAT 1')" >
+                                    <div>
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;table-layout: fixed">
+                                            <tr>
+                                                <td style="width:10%;">01</td>
+                                                <td style="width:90%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap">ESTAT 1</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="fila_2">
+                                <a href="" onclick="AceptarLista('ESTAT 2')">
+                                    <div>
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;table-layout: fixed">
+                                            <tr>
+                                                <td style="width:10%;">02</td>
+                                                <td style="width:90%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap">ESTAT 2</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </li>
+                            <li id="fila_3">
+                                <a href="" onclick="AceptarLista('ESTAT 3')">
+                                    <div>
+                                        <table cellpadding="0" cellspacing="0" border="0" style="width: 100%;table-layout: fixed">
+                                            <tr>
+                                                <td style="width:10%;">01</td>
+                                                <td style="width:90%;overflow: hidden;text-overflow: ellipsis;white-space: nowrap">ESTAT 3</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <table width="100%" style="position: inherit;bottom:0px ">
+                            <tr>
+                                <td >
+                                    <a href="#" id="btnInventarioCancelarLista" onclick="CancelarLista()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" style="height:25px ;padding-top:10px;text-align:center;margin:auto">
+                                        Cancel.lar
+                                    </a>
+                                </td>
+                            </tr>
+                        </table>
+
+                    </div>
+                </div>
             </div>
 
         </div>
