@@ -597,7 +597,7 @@ html body .ui-group-theme-c a {
 html .ui-bar-c a:visited,
 html .ui-body-c a:visited,
 html body .ui-group-theme-c a:visited {
-    color: #16648d  /*{c-link-visited}*/;
+    color: #666666  /*{c-link-visited}*/;
 }
 .ui-page-theme-c a:hover,
 html .ui-bar-c a:hover,

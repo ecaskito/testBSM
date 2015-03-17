@@ -87,7 +87,7 @@ function AbrirNumero(p_elemento,p_label){
     $('#labelINVENTARIONUMERO').text(p_elemento);
 
     var v_texto='1';
-    v_texto=$('#'+p_label).tex();
+    v_texto=$('#'+p_label).text();
     $('#number').val(v_texto);
 
     $('#divInventarioNumero').show();

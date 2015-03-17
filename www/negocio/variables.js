@@ -119,7 +119,7 @@ var _sElemento2Foto = null;
 
 var _iIdActivo = null;
 var _sIdActivo = null;
-var _sActivoFoto=null;
+var _sActivoFoto='';
 var _sActivoEtiqueta=null;
 
 var _sInventarioDefinicion="";

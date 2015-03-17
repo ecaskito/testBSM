@@ -96,6 +96,20 @@ function inventario_clik(){
 
 }
 
+function listainventario_clik(){
+    //abrirPagina("pageInventario");
+
+}
+
+function salir() {
+    if (navigator.app) {
+        navigator.app.exitApp();
+    } else if (navigator.device) {
+        navigator.device.exitApp();
+    }
+}
+
+
 function abrirPagina(sPag) {
 
         $.mobile.changePage('#' + sPag, {transition: "none"});

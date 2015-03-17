@@ -4,7 +4,7 @@
 }
 
 .mi-util:hover{
-    background-color:#f9dce2;
+    background-color:rgba(26,154,220,0.3);
 }
 
 .mi-util a {
@@ -56,40 +56,44 @@
 }
 
 .mi-cab-menu {
-    display:-webkit-box;
-    margin:-12px;
-    background-color:#fafafa;
-    color:#DB0D36;
-    font-size:0.9em;
-    font-weight:bold;
+    margin:-16px;
+    /*background-image:url('../img/fondomenulateral.png');*/
+    color:#ffffff;
+    font-size:1.0em;
+    font-weight:normal;
 }
 .mi-cab-menu-texto {
     padding:14px;
+    margin-top: -40px;
 }
 .mi-ul {
     list-style:none;
     text-decoration:none;
-    font-size:0.85em;
+    font-size:0.95em;
     -webkit-padding-start: 0px;
     margin-left: -10px;
     margin-right: -10px;
+    color:#666666;
 }
+
 .mi-selected {
-    color:#DB0D36;
+    color:#1a9adc;
 }
+
 .mi-ul li {
     border-bottom:1px solid #fafafa;
     padding-left:10px;
 }
 .mi-ul li:hover {
-    background-color: #f9dce2;
+    background-color: rgba(26,154,220,0.3);
 }
+
 
 .mi-ul a {
 	padding: 10px 10px;
 	text-decoration: none;
 	zoom: 1; /* IE7 */
-    color:#333333;
+    color:#666666;
 }
 
 .div-loading {
@@ -578,4 +582,36 @@ textarea.ui-input-text.ui-textinput-autogrow{
     box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
     width: 40px;
     text-align: center;
+}
+
+.celdamenuselect {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #1a9adc;
+    border-bottom: 4px solid  #1a9adc;
+    background-color: #f6f6f6;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 5px 10px 5px;
+}
+
+.celdamenuselect:hover {
+    background-color: rgba(26,154,220,0.3);
+}
+
+.celdamenu {
+    font-size: 0.9em;
+    font-weight: normal;
+    color: #666666;
+    border-bottom: 4px solid  #666666;
+    background-color: #f6f6f6;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    padding:10px 5px 10px 5px;
+}
+
+.celdamenu:hover {
+    background-color: rgba(26,154,220,0.3);
 }

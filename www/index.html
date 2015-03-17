@@ -68,11 +68,28 @@
     </head>
     <body style="margin: auto; width: 100%;">
     <div data-role="page" id="pageIndex">
+        <div data-role="panel" id="leftmenu1" data-display="overlay" data-position="left" data-theme="c" style="background-color:#f3f3f3" class="ui-panel ui-panel-position-left ui-panel-display-overlay ui-body-a ui-panel-animate ui-panel-open">
+            <div class="mi-cab-menu">
+                <img alt="" src="img/fondomenulateral.png" width="272" />
+                <div class="mi-cab-menu-texto">usuari</div>
+            </div>
+            <ul class="mi-ul">
+                <li>
+                    <a href="" onclick="inventario_clik();"><div class="mi-selected">Nou inventari</div></a>
+                </li>
+                <li>
+                    <a href="" onclick="listainventario_clik();"><div>Llista inventari</div></a>
+                </li>
+                <li>
+                    <a href="" onclick="salir();"><div>Sortir</div></a>
+                </li>
+            </ul>
+        </div>
         <div data-role="header" data-theme="c" style="border: 0px">
             <table width="100%" cellspacing="0" cellpadding="0" border="0"><tr><td align="left"><div class="mi-util">
                 <a href="#leftmenu1"><img alt="" src="css/themes/Rojos/images/icons-png/bars-white.png" width="20" /></a>
             </div></td><td width="90%" style="text-align: center">
-                <h3 style="margin: 0em">
+                <h3>
                     Nou Registre Inventari
                 </h3></td></tr></table>
         </div>
@@ -80,23 +97,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
-                                <img src="img/nri_01.png" height="30px">
-                                <div style="color: #16648d ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="ubicacion_clik();">
+                                <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -157,23 +165,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
-                                <img src="img/nri_01.png" height="30px">
-                                <div style="color: #16648d ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -326,23 +325,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
-                                <img src="img/nri_01.png" height="30px">
-                                <div style="color: #16648d ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -389,23 +379,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
-                                <img src="img/nri_01.png" height="30px">
-                                <div style="color: #16648d ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -448,23 +429,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 1.1em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
-                                <img src="img/nri_01.png" height="30px">
-                                <div style="color: #16648d ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -508,23 +480,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
-                                <img src="img/nri_01.png" height="30px">
-                                <div style="color: #16648d ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -563,23 +526,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #16648d ;text-decoration: none">
-                                <img src="img/nri_01.png" height="30px">
-                                <div style="color: #16648d ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -621,23 +575,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
-                                <img src="img/nri_01_gris.png" height="30px">
-                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenu" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
-                                <img src="img/nri_02.png" height="30px">
-                                <div style="color: #16648d;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -808,23 +753,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
-                                <img src="img/nri_01_gris.png" height="30px">
-                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenu" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
-                                <img src="img/nri_02.png" height="30px">
-                                <div style="color: #16648d;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -852,23 +788,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
-                                <img src="img/nri_01_gris.png" height="30px">
-                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenu" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
-                                <img src="img/nri_02.png" height="30px">
-                                <div style="color: #16648d;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -900,23 +827,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
-                                <img src="img/nri_01_gris.png" height="30px">
-                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenu" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
-                                <img src="img/nri_02.png" height="30px">
-                                <div style="color: #16648d;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -949,23 +867,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
-                                <img src="img/nri_01_gris.png" height="30px">
-                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenu" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
-                                <img src="img/nri_02.png" height="30px">
-                                <div style="color: #16648d;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -998,23 +907,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
-                                <img src="img/nri_01_gris.png" height="30px">
-                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenu" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #16648d;text-decoration: none">
-                                <img src="img/nri_02.png" height="30px">
-                                <div style="color: #16648d;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_03_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenu" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -1049,23 +949,14 @@
             <div  style="background-color: #f6f6f6">
                 <table  cellpadding="1" cellspacing="2" border="0" width="100%" style="background-color: #ffffff">
                     <tr>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal; color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="ubicacion_clik();"  style="color: #666666 ;text-decoration: none">
-                                <img src="img/nri_01_gris.png" height="30px">
-                                <div style="color: #666666 ;text-decoration: none">Ubicació</div>
-                            </a>
+                        <td  class="celdamenu" onclick="ubicacion_clik();">
+                            <div>Ubicació</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #666666;border-bottom: 2px solid  #666666;background-color: #f6f6f6">
-                            <a href="" onclick="activo_clik();" style="color: #666666;text-decoration: none">
-                                <img src="img/nri_02_gris.png" height="30px">
-                                <div style="color: #666666;text-decoration: none">Actiu</div>
-                            </a>
+                        <td  class="celdamenu" onclick="activo_clik();">
+                            <div>Actiu</div>
                         </td>
-                        <td align="center" style="font-size: 0.9em;font-weight: normal;color: #16648d;border-bottom: 2px solid  #16648d;background-color: #f6f6f6">
-                            <a href="" onclick="inventario_clik();" style="color: #16648d;text-decoration: none">
-                                <img src="img/nri_03.png" height="30px">
-                                <div style="color: #16648d;text-decoration: none">Inventari</div>
-                            </a>
+                        <td  class="celdamenuselect" onclick="inventario_clik();">
+                            <div>Inventari</div>
                         </td>
                     </tr>
                 </table>
@@ -1132,12 +1023,12 @@
                     <tr>
                         <td width="48%">
                             <div id="divInventarioFoto" style="width:100%;text-align: center">
-                                <img id="imgInventarioFoto" src="img/sinFoto.png" style="max-height:20%;width:98%; border:1px solid #dddddd" onclick="abrirZoomFotoInventario();" />
+                                <img id="imgInventarioFoto" src="img/sinFoto.png" style="max-height:150px;max-width:98%; border:1px solid #dddddd" onclick="abrirZoomFotoInventario();" />
                             </div>
                         </td>
                         <td  width="48%">
                             <div id="divInventarioGPS" style="width:100%;text-align: center">
-                                <img id="imgInventarioGPS" src="img/sinGPS.png" style="max-height:20%;width:98%; border:1px solid #dddddd" onclick="abrirPagina('pageZoomFoto', false);" />
+                                <img id="imgInventarioGPS" src="img/sinGPS.png" style="max-height:150px;max-width:98%; border:1px solid #dddddd" onclick="abrirPagina('pageZoomFoto', false);" />
                             </div>
                         </td>
                     </tr>
