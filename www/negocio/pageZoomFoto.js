@@ -20,8 +20,8 @@ function HacerFoto() {
             quality: 20,
             destinationType: Camera.DestinationType.DATA_URL,
             correctOrientation: true,
-            sourceType: Camera.PictureSourceType.PHOTOLIBRARY,
-            saveToPhotoAlbum: true
+            sourceType: Camera.PictureSourceType.CAMERA,
+            saveToPhotoAlbum: false
         });
     }
     catch (ex) {
