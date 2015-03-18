@@ -5,21 +5,20 @@ function inicioPageGPS() {
     if(_GPSTemPosicion==null){
         _GPSTemPosicion=_GPSPosicion;
     }
-    MostrarPosicion();
+    MostrarPosicion(_GPSTemPosicion);
 
 }
 
 function ActualizarPosicion(){
-    if(_GPSPosicion==null){
-        mensaje("No s'han trovat coordenades GPS","avis");
+    if(_GPSPosicion != null){
+        MostrarPosicion(_GPSPosicion);
     }
     else{
-        _GPSTemPosicion=_GPSPosicion;
+        mensaje("No s'han trovat coordenades GPS","avis");
     }
-    MostrarPosicion();
 }
 
-function MostrarPosicion(){
+function MostrarPosicion(posicion){
     try {
         var posAlta = new google.maps.LatLng(_ayuntamiento_posicionX, _ayuntamiento_posicionY);
         var mapOptions = {
@@ -40,13 +39,15 @@ function MostrarPosicion(){
         };
         var v_mapConsulta = new google.maps.Map(document.getElementById('divMapaConsulta'), mapOptions);
 
-        if(_GPSTemPosicion==null){
+        if(posicion==null){
             //mensaje("No s'han trovat coordenades GPS","avis");
             //crearMarcadorEventoClick1(v_mapConsulta);
             //nuevoMarcadorSobrePlanoClickInfoWindow1('ALTA', v_mapConsulta, posAlta, null, null);
         }
         else{
             crearMarcadorEventoClick1(v_mapConsulta);
+            _GPSTemPosicion=posicion;
+
             //Coordenadas
             var sCoords="";
             var sCoord_X="";

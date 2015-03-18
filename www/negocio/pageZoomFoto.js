@@ -68,14 +68,9 @@ function HacerFoto() {
 }
 function hacerfotoOK(imageData) {
     _sZoomFoto = imageData;
-    if(_sZoomFotoOrigen=='Inventario'){
-        _sInventarioFoto=_sZoomFoto;
-    }
     MostrarFoto();
 }
 function hacerFotoERROR(error) {
-    _sZoomFoto = '';
-    mensaje(error.message);
 }
 
 function MostrarFoto(){

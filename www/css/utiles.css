@@ -101,11 +101,8 @@ h3{
 }
 
 
-.mi-ul a {
+.mi-ul div {
 	padding: 10px 10px;
-	text-decoration: none;
-	zoom: 1; /* IE7 */
-    color:#666666;
 }
 
 .div-loading {

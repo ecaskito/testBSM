@@ -152,15 +152,37 @@ function abrirZoomFotoInventario(){
     if (_sActivoFoto!=''){
         _sZoomFotoOrigen='InventarioActivo';
         _sZoomFoto=_sActivoFoto;
+        abrirPagina("pageZoomFoto");
     }
     else if (_sInventarioFoto != ''){
         _sZoomFoto=_sInventarioFoto;
+        abrirPagina("pageZoomFoto");
     }
     else{
-        _sZoomFoto='';
+        HacerFoto1();
     }
 
+}
+
+function HacerFoto1() {
+    try {
+        navigator.camera.getPicture(hacerfotoOK1, hacerFotoERROR1, {
+            quality: 20,
+            destinationType: Camera.DestinationType.DATA_URL,
+            correctOrientation: true,
+            sourceType: Camera.PictureSourceType.CAMERA,
+            saveToPhotoAlbum: false
+        });
+    }
+    catch (ex) {
+        mensaje(ex.message);
+    }
+}
+function hacerfotoOK1(imageData) {
+    _sZoomFoto = imageData;
     abrirPagina("pageZoomFoto");
+}
+function hacerFotoERROR1(error) {
 }
 
 
