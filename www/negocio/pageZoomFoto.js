@@ -4,20 +4,13 @@ function inicioPageZoomFoto() {
         document.getElementById("btnZoomFotoBorrar").style.visibility="visibility";
         document.getElementById("btnZoomFotoRefrescar").style.visibility="visibility";
         document.getElementById("btnZoomFotoAceptar").style.visibility="visibility";
-        if(_sZoomFoto != ''){
-            MostrarFoto();
-        }
-        else{
-            HacerFoto();
-        }
     }
     else{
         document.getElementById("btnZoomFotoBorrar").style.visibility="hidden";
         document.getElementById("btnZoomFotoRefrescar").style.visibility="hidden";
         document.getElementById("btnZoomFotoAceptar").style.visibility="hidden";
-        MostrarFoto();
     }
-
+    MostrarFoto();
 }
 
 function BorrarFoto() {
