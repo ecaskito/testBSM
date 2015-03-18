@@ -21,6 +21,8 @@ var app = {
 };
 
 function deviceReady() {
+    document.addEventListener("backbutton", handleBackButton, false);
+
     if (!$.jStorage.storageAvailable()) {
         alert("localstorage no soportat");
     }

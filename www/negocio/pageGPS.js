@@ -37,7 +37,7 @@ function MostrarPosicion(){
             zoomControl: false,
             streetViewControl: false,
             disableDefaultUI: true,
-            center: posAlta
+            center: _GPSTemPosicion
             //maximumAge: 0//,timeout:1000
         };
         var v_mapConsulta = new google.maps.Map(document.getElementById('divMapaConsulta'), mapOptions);

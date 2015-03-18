@@ -13,6 +13,7 @@ function inicioPageZoomFoto() {
         }
     }
     catch (ex){}
+
     MostrarFoto();
 }
 

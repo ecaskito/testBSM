@@ -175,7 +175,20 @@ function HacerFoto1() {
         });
     }
     catch (ex) {
-        mensaje(ex.message);
+        _sZoomFotoOrigen='Inventario';
+        if (_sActivoFoto!=''){
+            _sZoomFotoOrigen='InventarioActivo';
+            _sZoomFoto=_sActivoFoto;
+            abrirPagina("pageZoomFoto");
+        }
+        else if (_sInventarioFoto != ''){
+            _sZoomFoto=_sInventarioFoto;
+            abrirPagina("pageZoomFoto");
+        }
+        else{
+            abrirPagina("pageZoomFoto");
+        }
+        //mensaje(ex.message);
     }
 }
 function hacerfotoOK1(imageData) {
@@ -184,6 +197,7 @@ function hacerfotoOK1(imageData) {
     abrirPagina("pageZoomFoto");
 }
 function hacerFotoERROR1(error) {
+    abrirPagina("pageZoomFoto");
 }
 
 
