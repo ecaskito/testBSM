@@ -415,7 +415,7 @@ h3{
     font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -424,7 +424,7 @@ h3{
 
 
 .lbltit{
-    color: #16648d ;
+    color: #005ca9;/* #16648d ;*/
     padding:5px ;
     font-size: 0.8em !Important;
     background-color: #f6f6f6;
@@ -504,7 +504,7 @@ h3{
 }
 
 .fit-content {
-    top : 40px;
+    top : 0px;
     bottom : 1px;
     left : 0;
     right : 0;
@@ -561,11 +561,11 @@ h3{
 
 textarea{
     text-transform:uppercase;
-    height: 80% !important;
+    height: 77% !important;
     margin: 0px;
 }
 textarea.ui-input-text {
-    height: 80% !important;
+    height: 77% !important;
     margin: 0px;
 }
 textarea.ui-input-text.ui-textinput-autogrow{
@@ -605,8 +605,8 @@ textarea.ui-input-text.ui-textinput-autogrow{
 .celdamenuselect {
     font-size: 0.9em;
     font-weight: normal;
-    color: #1a9adc;
-    border-bottom: 4px solid  #1a9adc;
+    color: #005ca9; /*  #1a9adc;*/
+    border-bottom: 4px solid  #005ca9;
     background-color: #f6f6f6;
     text-transform: uppercase;
     text-align: center;

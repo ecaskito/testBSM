@@ -43,7 +43,7 @@ function hacerFotoERROR(error) {
 function MostrarFoto(){
     var imagen = document.getElementById('imgZoomFoto');
     if (_sZoomFoto == '') {
-        imagen.src = "img/sinFoto.png";
+        imagen.src = "img/sinfoto.png";
     }
     else {
         imagen.src = "data:image/jpeg;base64," + _sZoomFoto;

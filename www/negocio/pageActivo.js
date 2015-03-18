@@ -26,7 +26,7 @@ function inicioPageActivo(){
 
     var imagen = document.getElementById('imgFoto');
     if (_sActivoFoto == '') {
-        imagen.src = "img/sinFoto.png";
+        imagen.src = "img/sinfoto.png";
     }
     else {
         imagen.src = "data:image/jpeg;base64," + _sActivoFoto;
