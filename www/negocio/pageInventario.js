@@ -180,6 +180,7 @@ function HacerFoto1() {
 }
 function hacerfotoOK1(imageData) {
     _sZoomFoto = imageData;
+    _sZoomFotoOrigen='Inventario';
     abrirPagina("pageZoomFoto");
 }
 function hacerFotoERROR1(error) {

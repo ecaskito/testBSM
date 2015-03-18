@@ -24,6 +24,9 @@ function deviceReady() {
     if (!$.jStorage.storageAvailable()) {
         alert("localstorage no soportat");
     }
+    if (_GPSwathID == null){
+        getLocation();
+    }
 
 }
 
@@ -43,15 +46,6 @@ function handleBackButton() {
             } else if (navigator.device) {
                 navigator.device.exitApp();
             }
-        }
-        else if ($.mobile.activePage.attr('id') == 'pageDatosIncidencia') {
-            abrirPagina("pageTipoIncidencia", false);
-        }
-        else if ($.mobile.activePage.attr('id') == 'pageInfoEnvio') {
-            abrirPagina("pageTipoIncidencia", false);
-        }
-        else if ($.mobile.activePage.attr('id') == 'pageConsultaIncidencias') {
-            abrirPagina("pageTipoIncidencia", false);
         }
         else{
             if (navigator.app) {
@@ -168,4 +162,31 @@ function abrirPagina(sPag) {
                 $.doTimeout(1500, inicioPageGPS());
                 break;
         }
+}
+
+
+function getLocation() {
+    try {
+        var locOptions = {
+            maximumAge: 0,
+            timeout: 1000,
+            enableHighAccuracy: true
+        };
+        //get the current location
+        _GPSwathID = navigator.geolocation.watchPosition(onLocationSuccess, onLocationError, locOptions);
+    }
+    catch (ex){
+        //alert("watchPosition:"+ex.message);
+    }
+}
+
+function onLocationSuccess(loc) {
+    _GPSPosicion = loc;
+    _GPScurrentposition=true;
+    //alert("watchPositionOK");
+}
+
+function onLocationError(e) {
+    _GPScurrentposition=false;
+    //alert("watchPositionERROR: "+ex.message);
 }

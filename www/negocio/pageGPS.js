@@ -41,7 +41,7 @@ function MostrarPosicion(){
         };
         var v_mapConsulta = new google.maps.Map(document.getElementById('divMapaConsulta'), mapOptions);
 
-        if(posicion==null){
+        if(_GPSTemPosicion==null){
             //mensaje("No s'han trovat coordenades GPS","avis");
             //crearMarcadorEventoClick1(v_mapConsulta);
             //nuevoMarcadorSobrePlanoClickInfoWindow1('ALTA', v_mapConsulta, posAlta, null, null);
@@ -80,32 +80,6 @@ function MostrarPosicion(){
     }
 }
 
-function getLocation() {
-    try {
-       var locOptions = {
-            maximumAge: 0,
-            timeout: 1000,
-            enableHighAccuracy: true
-        };
-        //get the current location
-        _GPSwathID = navigator.geolocation.watchPosition(onLocationSuccess, onLocationError, locOptions);
-    }
-    catch (ex){
-        //alert("watchPosition:"+ex.message);
-    }
-}
-
-function onLocationSuccess(loc) {
-    alert(_GPSPosicion);
-    _GPSPosicion = loc;
-    _GPScurrentposition=true;
-    //alert("watchPositionOK");
-}
-
-function onLocationError(e) {
-    _GPScurrentposition=false;
-    //alert("watchPositionERROR: "+ex.message);
-}
 
 function getPosition() {
     try {
