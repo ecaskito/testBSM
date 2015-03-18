@@ -138,7 +138,7 @@ var _sInventarioNumero="";
 var _sInventarioObservaciones="";
 var _sInventarioFaltanDatos="";
 var _sInventarioIncidencia="";
-var _sInventarioFoto="";
+var _sInventarioFoto='';
 var _sInventarioCoordX="";
 var _sInventarioCoordY="";
 

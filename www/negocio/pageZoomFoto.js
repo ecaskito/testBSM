@@ -1,7 +1,7 @@
 
 function inicioPageZoomFoto() {
     if(_sZoomFotoOrigen=='Inventario'){
-        if(_sZoomFoto==''){
+        if(_sZoomFoto != ''){
             MostrarFoto();
         }
         else{

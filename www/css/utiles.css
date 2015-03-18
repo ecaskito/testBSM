@@ -199,6 +199,7 @@ h3{
     font-size: 0.95em;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
+    margin-top: 8px;
 }
 #lvSector1{
     list-style: none;
@@ -426,7 +427,7 @@ h3{
 .lbltit{
     color: #005ca9;/* #16648d ;*/
     padding:5px ;
-    font-size: 0.8em !Important;
+    font-size: 0.85em !Important;
     background-color: #f6f6f6;
     font-weight: bold !Important;
 }
@@ -445,7 +446,7 @@ h3{
     text-decoration: none;
     color: #333333;
     background-color: #f3f3f3;
-    padding:5px;
+    padding:3px;
     margin: 0px;
     height: 1.2em;
     font-size: 0.85em !Important;
@@ -459,7 +460,8 @@ h3{
 
 .celdaLabel{
     font-size: 0.9em;
-    white-space: nowrap
+    white-space: nowrap;
+    padding:3px;
 }
 .lblTitulo{
     color: #ffffff;
@@ -474,7 +476,7 @@ h3{
 .imgedit{
     color: #333333;
     background-color: #f3f3f3;
-    padding:5px;
+    padding:3px;
     margin: 0px;
     height: 1.2em;
     font-size: 0.9em !Important;
@@ -521,8 +523,8 @@ h3{
 }
 
 #divTipoInci a{
-    width: 110px;
-    height: 90px;
+    width: 140px;
+    height: 80px;
     display: inherit;
     margin: 5px;
     text-align: center;
@@ -531,6 +533,7 @@ h3{
     font-width: normal;
     font-size: 0.9em;
     font-weight: normal;
+    padding: 2px;
 }
 
 #divTipoInci a div {
@@ -561,11 +564,11 @@ h3{
 
 textarea{
     text-transform:uppercase;
-    height: 77% !important;
+    height: 70% !important;
     margin: 0px;
 }
 textarea.ui-input-text {
-    height: 77% !important;
+    height: 70% !important;
     margin: 0px;
 }
 textarea.ui-input-text.ui-textinput-autogrow{
@@ -605,8 +608,8 @@ textarea.ui-input-text.ui-textinput-autogrow{
 .celdamenuselect {
     font-size: 0.9em;
     font-weight: normal;
-    color: #005ca9; /*  #1a9adc;*/
-    border-bottom: 4px solid  #005ca9;
+    color: #1a9adc;
+    border-bottom: 4px solid  #1a9adc;
     background-color: #f6f6f6;
     text-transform: uppercase;
     text-align: center;
@@ -640,3 +643,24 @@ textarea.ui-input-text.ui-textinput-autogrow{
     width: 18px;
 }
 
+.lbltexto1{
+    color: #333333;
+    padding:5px 10px 0px 10px !Important;
+    font-size: 0.95em !Important;
+    margin: 0px !Important;
+}
+
+.botonClasif{
+    background-color: #efefef ! Important;
+    border-color: #dddddd !Important;
+    color: #005ca9  !Important;
+    text-shadow: 0 /*{c-bup-shadow-x}*/ 0px /*{c-bup-shadow-y}*/ 0 /*{c-bup-shadow-radius}*/ #005ca9  /*{c-bup-shadow-color}*/ !Important;
+}
+
+
+.botonClasif:hover{
+    background-color: rgba(26, 154, 220, 0.3) /*{c-bhover-background-color}*/;
+    border-color: #dddddd /*{c-bhover-border}*/;
+    color: #1a9adc /*{c-bhover-color}*/;
+    text-shadow: 0 /*{c-bhover-shadow-x}*/ 0px /*{c-bhover-shadow-y}*/ 0 /*{c-bhover-shadow-radius}*/ #1a9adc /*{c-bhover-shadow-color}*/;
+}

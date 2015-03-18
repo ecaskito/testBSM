@@ -30,9 +30,9 @@ function cargaListaClasificacion() {
     var nInd = 0;
     var nIndVis = 0;
     for (v_id in _dicClasifImagen) {
-        sTagImg += "<a href='' onclick='" + "mostrarCentros(" + v_id + ")' data-mini='false' data-inline='false' data-role='button' data-theme='c' data-corners='true' data-shadow='true' data-iconshadow='true' data-wrapperels='span' class='ui-btn ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-first-child ui-btn-up-c'>"
+        sTagImg += "<a href='' onclick='" + "mostrarCentros(" + v_id + ")' data-mini='false' data-inline='false' data-role='button' data-theme='c' data-corners='true' data-shadow='true' data-iconshadow='true' data-wrapperels='span' class='ui-btn ui-shadow ui-btn-corner-all ui-fullsize ui-btn-block ui-first-child ui-btn-up-c botonClasif'>"
         sTagImg += "<img alt='' src='img/"+_dicClasifImagen[v_id]+"' style='width:45px' />"
-        sTagImg += "<div>" + _dicClasifNombre[v_id] + "</div>"
+        sTagImg += "<div style='color: #005ca9'>" + _dicClasifNombre[v_id] + "</div>"
         sTagImg += "</a>"
     }
     $('#divTipoInci').html(sTagImg);
