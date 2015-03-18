@@ -151,6 +151,9 @@ var _sZoomFotoOrigen='';
 var _GPSPosicion = null;
 var _GPSwathID=null;
 var _GPScurrentposition=false;
+
+var _GPSTemPosicion = null;
+
 var _ayuntamiento_posicionX = '41.382165';
 var _ayuntamiento_posicionY = '2.176867';
 

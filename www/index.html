@@ -1140,35 +1140,70 @@
 
     <div data-role="page" id="pageZoomFoto" data-theme="c" style="border: 0px">
         <div data-role="header" data-theme="c" style="border: 0px">
-            <table cellspacing="0" cellpadding="0" border="0"><tr><td align="left">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%">
+                <tr>
+                    <td align="left">
                 <div class="mi-util">
                     <a href="" onclick="handleBackButton()">
                         <img alt="" src="css/themes/Rojos/images/icons-png/carat-l-white.png" width="20" />
                     </a>
                 </div>
             </td>
+                <td align="right">
+                    <div class="mi-util" style="float: right;display: inline-flex">
+                        <a href="btnZoomFotoBorrar" onclick="BorrarFoto()">
+                            <img alt="" src="img/delete_white.png" width="20" />
+                        </a>
+                        <a href="btnZoomFotoRefrescar" onclick="RefrescarFoto()">
+                            <img alt="" src="css/themes/Rojos/images/icons-png/camera-white.png" width="20" />
+                        </a>
+                    </div>
+
+                </td>
             </tr>
             </table>
         </div>
         <div data-role="content" data-theme="c" style="padding:2px;" >
             <div>
-                <img id="imgZoomFoto" src="" border='1' width="100%" />
-                <a href="#" id="btnFotoActualizar" onclick="ActualizarFoto()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" >
-                    Actualitzar foto
-                </a>
+                <img id="imgZoomFoto" src="" border='1' width="100%" style="max-height: 80%" />
             </div>
-        </div>
+            <div  style="width: 96%; position: inherit;bottom:0px; margin: 0px 2%">
+                <table width="100%" cellspacing="2" cellpadding="2">
+                    <tr>
+                        <td style="width: 50%">
+                            <a href="#" id="btnZoomFotoAceptar" onclick="AceptarFoto()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" >
+                                Aceptar
+                            </a>
+                        </td>
+                        <td  style="width: 50%">
+                            <a href="#" id="btnZoomFotoCancelar" onclick="CancelarFoto()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" >
+                                Cancel.lar
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
     </div>
+        </div>
 
     <div data-role="page" id="pageGPS" data-theme="c" style="border: 0px">
         <div data-role="header" data-theme="c" style="border: 0px">
-            <table cellspacing="0" cellpadding="0" border="0"><tr><td align="left">
+            <table cellspacing="0" cellpadding="0" border="0" width="100%"><tr><td align="left">
                 <div class="mi-util">
                     <a href="" onclick="handleBackButton()">
                         <img alt="" src="css/themes/Rojos/images/icons-png/carat-l-white.png" width="20" />
                     </a>
                 </div>
             </td>
+                <td align="right">
+                    <div class="mi-util" style="float: right;display: inline-flex">
+                        <a href="btnGPSRefrescar" onclick="ActualizarPosicion()">
+                            <img alt="" src="css/themes/Rojos/images/icons-png/refresh-white.png" width="20" />
+                        </a>
+                    </div>
+
+                </td>
             </tr>
             </table>
         </div>
@@ -1176,9 +1211,23 @@
             <div id="divSobreMapaConsulta">
                 <div id="divMapaConsulta" style="width: 100%;height:90%">
                 </div>
-                <a href="#" id="btnGPSActualizar" onclick="ActualizarPosicion()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" >
-                    Actualitzar posició
-                </a>
+                <div  style="width: 96%; position: inherit;bottom:0px; margin: 0px 2%">
+                    <table width="100%" cellspacing="2" cellpadding="2">
+                        <tr>
+                            <td style="width: 50%">
+                                <a href="#" id="btnGPSAceptar" onclick="AceptarGPS()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" >
+                                    Aceptar
+                                </a>
+                            </td>
+                            <td  style="width: 50%">
+                                <a href="#" id="btnGPSCancelar" onclick="CancelarGPS()"  data-mini="true" data-inline="false" data-role="button" data-theme="c" >
+                                    Cancel.lar
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+
+                </div>
             </div>
         </div>
     </div>

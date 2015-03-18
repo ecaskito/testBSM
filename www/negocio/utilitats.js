@@ -127,8 +127,8 @@ function CambiarMarcador(p_respuesta) {
         if (p_respuesta == 1) {
             eliminarMarcadorMapa();
 
-            _sInventarioPosicion = _mapaEvento.latLng;
-            _mapaMarcador.setCenter(_sInventarioPosicion);
+            _GPSTemPosicion = _mapaEvento.latLng;
+            _mapaMarcador.setCenter(_GPSTemPosicion);
 
 
             $.doTimeout(700, function () {

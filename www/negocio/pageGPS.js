@@ -2,8 +2,8 @@ function inicioPageGPS() {
     //if (_GPSwathID == null){
     //    $.doTimeout(1500, getLocation());
     //}
-    if(_sInventarioPosicion==null){
-        _sInventarioPosicion=_GPSPosicion;
+    if(_GPSTemPosicion==null){
+        _GPSTemPosicion=_GPSPosicion;
     }
     MostrarPosicion();
 
@@ -14,7 +14,7 @@ function ActualizarPosicion(){
         mensaje("No s'han trovat coordenades GPS","avis");
     }
     else{
-        _sInventarioPosicion=_GPSPosicion;
+        _GPSTemPosicion=_GPSPosicion;
     }
     MostrarPosicion();
 }
@@ -40,14 +40,10 @@ function MostrarPosicion(){
         };
         var v_mapConsulta = new google.maps.Map(document.getElementById('divMapaConsulta'), mapOptions);
 
-        if(_sInventarioPosicion==null){
-            mensaje("No s'han trovat coordenades GPS","avis");
-            crearMarcadorEventoClick1(v_mapConsulta);
-            nuevoMarcadorSobrePlanoClickInfoWindow1('ALTA', v_mapConsulta, posAlta, null, null);
-            //var marcador1 = new google.maps.Marker({
-            //    position: posAlta,
-            //    map: v_mapConsulta
-            //});
+        if(_GPSTemPosicion==null){
+            //mensaje("No s'han trovat coordenades GPS","avis");
+            //crearMarcadorEventoClick1(v_mapConsulta);
+            //nuevoMarcadorSobrePlanoClickInfoWindow1('ALTA', v_mapConsulta, posAlta, null, null);
         }
         else{
             crearMarcadorEventoClick1(v_mapConsulta);
@@ -55,8 +51,8 @@ function MostrarPosicion(){
             var sCoords="";
             var sCoord_X="";
             var sCoord_Y="";
-            if (_sInventarioPosicion !="") {
-                sCoords = _sInventarioPosicion.toString().replace(" ", "").replace("(", "").replace(")", "");
+            if (_GPSTemPosicion !="") {
+                sCoords = _GPSTemPosicion.toString().replace(" ", "").replace("(", "").replace(")", "");
                 if (sCoords != null && sCoords.trim() != '') {
                     sCoord_X = sCoords.split(",")[0];
                     sCoord_Y = sCoords.split(",")[1];
@@ -134,3 +130,12 @@ function onLocationError1(e) {
     _GPScurrentposition=false;
 }
 
+function AceptarGPS() {
+   _sInventarioPosicion=_GPSTemPosicion;
+   mostrarCoordGPSInventario();
+   handleBackButton();
+}
+
+function CancelarGPS() {
+    handleBackButton();
+}

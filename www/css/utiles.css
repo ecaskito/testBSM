@@ -168,6 +168,9 @@ h3{
     padding-right: 2px;
     background-color: #fefefe;
     text-transform: none;
+    border-color: #dddddd;
+    text-align: left;
+    padding: 2px 0px;
 }
 
 #lvFamilia{
@@ -190,6 +193,9 @@ h3{
     padding-right: 2px;
     background-color: #fefefe;
     text-transform: none;
+    border-color: #dddddd;
+    text-align: left;
+    padding: 2px 0px;
 }
 
 .divtitubicacion{

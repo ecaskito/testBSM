@@ -31,20 +31,8 @@ function inicioPageInventario(){
     $('#labelINVENTARIO_ICANTIDAD').text('1');
     $('#labelINVENTARIO_SNUMSERIE').text(' ');
 
-    var imagen = document.getElementById('imgInventarioFoto');
-    if (_sActivoFoto == '') {
-        if (_sInventarioFoto=='')
-        {
-            imagen.src = "img/sinfoto.png";
-        }
-        else{
-            imagen.src = "data:image/jpeg;base64," + _sInventarioFoto;
-        }
-    }
-    else {
-        imagen.src = "data:image/jpeg;base64," + _sActivoFoto;
-    }
-    mostrarCoordGPS();
+    mostrarFotoInventario();
+    mostrarCoordGPSInventario();
 }
 
 
@@ -175,11 +163,28 @@ function abrirZoomFotoInventario(){
     abrirPagina("pageZoomFoto");
 }
 
+
+function mostrarFotoInventario(){
+    var imagen = document.getElementById('imgInventarioFoto');
+    if (_sActivoFoto == '') {
+        if (_sInventarioFoto=='')
+        {
+            imagen.src = "img/sinfoto.png";
+        }
+        else{
+            imagen.src = "data:image/jpeg;base64," + _sInventarioFoto;
+        }
+    }
+    else {
+        imagen.src = "data:image/jpeg;base64," + _sActivoFoto;
+    }
+}
 function abrirGPSInventario(){
+    _GPSTemPosicion=_sInventarioPosicion;
     abrirPagina("pageGPS");
 }
 
-function mostrarCoordGPS() {
+function mostrarCoordGPSInventario() {
 
     if (_sInventarioPosicion == null) {
         $('#imgInventarioGPS').show();
@@ -202,9 +207,7 @@ function mostrarCoordGPS() {
                 }
             }
 
-alert('1');
             var v_posAlta = new google.maps.LatLng(sCoord_X, sCoord_Y);
-            alert('2');
             var v_mapOptions = {
                 zoom: 18,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -220,15 +223,12 @@ alert('1');
                 center: v_posAlta,
                 maximumAge: 0//,timeout:1000
             };
-            alert('3');
             var v_mapAlta = new google.maps.Map(document.getElementById('divMapaInventarioGPS'), v_mapOptions);
-            alert('4');
 
             var v_marcador = new google.maps.Marker({
                 position: v_posAlta,
                 map: v_mapAlta
             });
-            alert('5');
 
 
         }
