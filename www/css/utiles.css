@@ -1,13 +1,18 @@
 h3{
-    font-size: 1.5em;
-    font-weight: normal;
-    -webkit-margin-before: 0.65em;
-    -webkit-margin-after: 0.65em;
+    font-size: 1.3em  !Important;
+    font-weight: normal  !Important;
+    -webkit-margin-before: 0.4em  !Important;
+    -webkit-margin-after: 0.4em  !Important;
+    margin: 0 10% !Important;
+    white-space: nowrap
 }
 
 .mi-util{
     background-color:transparent;
     padding:2px;
+    float: left;
+    -webkit-margin-before: 0.6em  !Important;
+    -webkit-margin-after: 0.6em  !Important;
 }
 
 .mi-util:hover{
@@ -151,12 +156,12 @@ h3{
 #lvCentros li{
     padding: 0px;
     color: #333333;
-    height: 60px;
-    font-size: 1.1em;
+    height: 45px;
+    font-size: 0.95em;
 }
 
 #lvCentros li a{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
     padding-left: 2px;
@@ -173,12 +178,12 @@ h3{
 #lvFamilia li{
     padding: 0px;
     color: #333333;
-    height: 60px;
-    font-size: 1.1em;
+    height: 45px;
+    font-size: 0.95em;
 }
 
 #lvFamilia li a{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
     padding-left: 2px;
@@ -191,7 +196,7 @@ h3{
     background-color:#f6f6f6;
     color: #333333;
     padding:5px 2px;
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: bold;
     border-bottom: 1px solid #dddddd;
 }
@@ -203,7 +208,7 @@ h3{
 #lvSector1 li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 
 #lvSector1 li div:hover{
@@ -211,10 +216,10 @@ h3{
 }
 
 #lvSector1 li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -228,14 +233,14 @@ h3{
 #lvSector2 li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 
 #lvSector2 li div{
-    font-size:1.1em;
+    font-size:0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -252,17 +257,17 @@ h3{
 #lvDependencia1 li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 #lvDependencia1 li div:hover {
     background-color: rgba(26,154,220,0.3);
 }
 
 #lvDependencia1 li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -275,17 +280,17 @@ h3{
 #lvDependencia2 li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size:0.95em;
 }
 #lvDependencia2 li div:hover {
     background-color: rgba(26,154,220,0.3);
 }
 
 #lvDependencia2 li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -299,7 +304,7 @@ h3{
 #lvSubFamilia li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size:0.95em;
 }
 
 #lvSubFamilia li div:hover{
@@ -307,10 +312,10 @@ h3{
 }
 
 #lvSubFamilia li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -324,7 +329,7 @@ h3{
 #lvEquipo li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 
 #lvEquipo li div:hover{
@@ -332,10 +337,10 @@ h3{
 }
 
 #lvEquipo li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -349,7 +354,7 @@ h3{
 #lvElemento1 li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 
 #lvElemento1 li div:hover{
@@ -357,10 +362,10 @@ h3{
 }
 
 #lvElemento1 li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -374,7 +379,7 @@ h3{
 #lvElemento2 li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 
 #lvElemento2 li div:hover{
@@ -382,10 +387,10 @@ h3{
 }
 
 #lvElemento2 li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
-    padding: 15px 7px;
+    padding: 10px 7px;
     text-transform: none;
     background-color: #fefefe;
     border-bottom: 1px solid #dddddd;
@@ -399,7 +404,7 @@ h3{
 #lvInventarioLista li{
     padding: 0px;
     color: #333333;
-    font-size: 1.1em;
+    font-size: 0.95em;
 }
 
 #lvInventarioLista li div:hover{
@@ -407,7 +412,7 @@ h3{
 }
 
 #lvInventarioLista li div{
-    font-size: 1.1em;
+    font-size: 0.95em;
     font-weight: normal;
     color: #333333;
     padding: 15px 7px;
@@ -420,18 +425,20 @@ h3{
 
 .lbltit{
     color: #16648d ;
-    padding:5px;
-    font-size: 0.9em !Important;
+    padding:5px ;
+    font-size: 0.8em !Important;
     background-color: #f6f6f6;
-    font-weight: bold !Important;;
+    font-weight: bold !Important;
 }
 .lbltit:hover {
     background-color: rgba(26,154,220,0.3);
+    cursor: pointer;
 }
 .lblnormal{
     color: #333333;
-    padding:5px;
-    font-size: 0.9em !Important;
+    padding: 2px 5px;
+    font-size: 0.85em !Important;
+    margin: 0px !Important;
 }
 .lblnormalBorde{
     text-transform: uppercase;
@@ -441,14 +448,18 @@ h3{
     padding:5px;
     margin: 0px;
     height: 1.2em;
-    font-size: 0.9em !Important;
+    font-size: 0.85em !Important;
     border: 1px solid #dddddd;
     -webkit-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
     -moz-box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
     box-shadow: 0 0 3px #efefef /*{c-active-background-color}*/;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: 95%;
+}
+
+.celdaLabel{
+    font-size: 0.9em;
+    white-space: nowrap
 }
 .lblTitulo{
     color: #ffffff;
@@ -605,6 +616,7 @@ textarea.ui-input-text.ui-textinput-autogrow{
 
 .celdamenuselect:hover {
     background-color: rgba(26,154,220,0.3);
+    cursor: pointer;
 }
 
 .celdamenu {
@@ -621,4 +633,10 @@ textarea.ui-input-text.ui-textinput-autogrow{
 
 .celdamenu:hover {
     background-color: rgba(26,154,220,0.3);
+    cursor: pointer;
 }
+
+.imgLapiz{
+    width: 18px;
+}
+

@@ -37,7 +37,7 @@ function handleBackButton() {
                 navigator.device.exitApp();
             }
         }
-        else if ($.mobile.activePage.attr('id') == 'pageTipoIncidencia') {
+        else if ($.mobile.activePage.attr('id') == 'pageClasificacion') {
             if (navigator.app) {
                 navigator.app.exitApp();
             } else if (navigator.device) {
@@ -69,15 +69,13 @@ function handleBackButton() {
     }
 }
 
-function mostrarCalsif(p_clasif){
-
-    _iIdClasifCentro=p_clasif;
-    abrirPagina("pageCentros");
+function ValidarUsuario() {
+    abrirPagina("pageClasificacion");
 }
 
 function ubicacion_clik(){
     if(_iIdUbicacion==null){
-        abrirPagina("pageIndex");
+        abrirPagina("pageClasificacion");
     }
     else{
         abrirPagina("pageUbicacion");
@@ -117,6 +115,9 @@ function abrirPagina(sPag) {
         switch (sPag) {
             case 'pageIndex':
                 //$.doTimeout(1500, inicioPaginaTipoIncidencia());
+                break;
+            case 'pageClasificacion':
+                $.doTimeout(1500, inicioPageClasificacion());
                 break;
             case 'pageUbicacion':
                 $.doTimeout(1500, inicioPageUbicacion());

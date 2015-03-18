@@ -1,5 +1,10 @@
 
+var _usuLogin='';
+var _usuPass='';
+
 var _iIdClasifCentro = null;
+var _dicClasifImagen= {};
+var _dicClasifNombre= {};
 
 var _dicCentroImagen= {};
 var _dicCentroClasif= {};

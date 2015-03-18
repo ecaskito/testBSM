@@ -43,10 +43,10 @@ function cargaListaFamilia(){
     for(v_id  in _dicFamiliaNombre)
     {
 
-        v_li ="<div style='width:27%;height:48px;float: left;background-color: #efefef;border: 1px solid #efefef;margin: 2px;line-height: 48px;text-align: center'>";
-        v_li +="<img src='img/"+_dicFamiliaImagen[v_id]+"' style='max-width:100%;max-height:50px;display: inline-block;vertical-align:middle' />";
+        v_li ="<div style='width:19%;height:32px;float: left;background-color: #efefef;border: 1px solid #efefef;margin: 2px;line-height: 32px;text-align: center'>";
+        v_li +="<img src='img/"+_dicFamiliaImagen[v_id]+"' style='max-width:100%;max-height:34px;display: inline-block;vertical-align:middle' />";
         v_li +="</div>"
-        v_li +=" <div style='width:70%;float: right'>";
+        v_li +=" <div style='width:78%;float: right'>";
         v_li +=" <table cellpadding='0' cellspacing='0' border='0' style='width: 100%;table-layout: fixed'>";
         v_li +=" <tr><td style='font-weight: normal'>"+_dicFamiliaNombre[v_id]+"</td></tr>";
         v_li +=" <tr><td style='overflow: hidden;text-overflow: ellipsis;white-space: nowrap' >"+_dicFamiliaCodigo[v_id]+"</td></tr>";
