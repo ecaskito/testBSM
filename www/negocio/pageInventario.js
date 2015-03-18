@@ -33,7 +33,13 @@ function inicioPageInventario(){
 
     var imagen = document.getElementById('imgInventarioFoto');
     if (_sActivoFoto == '') {
-        imagen.src = "img/sinfoto.png";
+        if (_sInventarioFoto=='')
+        {
+            imagen.src = "img/sinfoto.png";
+        }
+        else{
+            imagen.src = "data:image/jpeg;base64," + _sInventarioFoto;
+        }
     }
     else {
         imagen.src = "data:image/jpeg;base64," + _sActivoFoto;

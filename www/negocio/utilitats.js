@@ -330,14 +330,15 @@ function cargaLetrasAbcdario(combo, sTitulo, nLetraSel){
 }
 
 
-$('#plus').unbind('click').bind('click', function () {
+function mas(){
     var value = $('#number').val();
     value++;
     $('#number').val(value);
-});
-
-$('#minus').unbind('click').bind('click', function () {
+}
+function menos(){
     var value = $('#number').val();
-    value--;
+    if(value > 1){
+        value--;
+    }
     $('#number').val(value);
-});
+}
