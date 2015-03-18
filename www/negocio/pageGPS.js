@@ -21,29 +21,54 @@ function ActualizarPosicion(){
 
 function MostrarPosicion(){
     try {
-        var paramPosInicial = new google.maps.LatLng(_ayuntamiento_posicionX,_ayuntamiento_posicionY);
-
+        var posAlta = new google.maps.LatLng(_ayuntamiento_posicionX, _ayuntamiento_posicionY);
         var mapOptions = {
-            zoom: 13,
+            zoom: 16,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
             disableDefaultUI: true,
+            //accuracy: 5,
             enabledHighAccuracy: true,
+            //overviewMapControl: false,
             panControl: false,
             rotateControl: false,
             scaleControl: false,
             zoomControl: false,
             streetViewControl: false,
-            center: paramPosInicial
+            disableDefaultUI: true,
+            center: posAlta
+            //maximumAge: 0//,timeout:1000
         };
-
         var v_mapConsulta = new google.maps.Map(document.getElementById('divMapaConsulta'), mapOptions);
 
         if(_sInventarioPosicion==null){
             mensaje("No s'han trovat coordenades GPS","avis");
+            crearMarcadorEventoClick1(v_mapConsulta);
+            nuevoMarcadorSobrePlanoClickInfoWindow1('ALTA', v_mapConsulta, posAlta, null, null);
+            //var marcador1 = new google.maps.Marker({
+            //    position: posAlta,
+            //    map: v_mapConsulta
+            //});
         }
         else{
             crearMarcadorEventoClick1(v_mapConsulta);
-            v_mapConsulta.setCenter(_sInventarioPosicion);
+            //Coordenadas
+            var sCoords="";
+            var sCoord_X="";
+            var sCoord_Y="";
+            if (_sInventarioPosicion !="") {
+                sCoords = _sInventarioPosicion.toString().replace(" ", "").replace("(", "").replace(")", "");
+                if (sCoords != null && sCoords.trim() != '') {
+                    sCoord_X = sCoords.split(",")[0];
+                    sCoord_Y = sCoords.split(",")[1];
+                }
+            }
+
+
+            nuevoMarcadorSobrePlanoClickInfoWindow1('ALTA', v_mapConsulta, new google.maps.LatLng(sCoord_X,sCoord_Y), null, null);
+            //var marcador2 = new google.maps.Marker({
+            //    position: new google.maps.LatLng(_sInventarioPosicion.coords.latitude, _sInventarioPosicion.coords.longitude),
+            //    map: v_mapConsulta
+            //});
         }
 
         try{
@@ -59,8 +84,7 @@ function MostrarPosicion(){
 
 function getLocation() {
     try {
-
-        var locOptions = {
+       var locOptions = {
             maximumAge: 0,
             timeout: 1000,
             enableHighAccuracy: true

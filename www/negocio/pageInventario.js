@@ -44,7 +44,7 @@ function inicioPageInventario(){
     else {
         imagen.src = "data:image/jpeg;base64," + _sActivoFoto;
     }
-
+    mostrarCoordGPS();
 }
 
 
@@ -177,4 +177,64 @@ function abrirZoomFotoInventario(){
 
 function abrirGPSInventario(){
     abrirPagina("pageGPS");
+}
+
+function mostrarCoordGPS() {
+
+    if (_sInventarioPosicion == null) {
+        $('#imgInventarioGPS').show();
+        $('#divMapaInventarioGPS').hide();
+    }
+    else {
+        try {
+            $('#imgInventarioGPS').hide();
+            $('#divMapaInventarioGPS').show();
+
+            //Coordenadas
+            var sCoords = "";
+            var sCoord_X = "";
+            var sCoord_Y = "";
+            if (_sInventarioPosicion != null) {
+                sCoords = _sInventarioPosicion.toString().replace(" ", "").replace("(", "").replace(")", "");
+                if (sCoords != null && sCoords.trim() != '') {
+                    sCoord_X = sCoords.split(",")[0];
+                    sCoord_Y = sCoords.split(",")[1];
+                }
+            }
+
+alert('1');
+            var v_posAlta = new google.maps.LatLng(sCoord_X, sCoord_Y);
+            alert('2');
+            var v_mapOptions = {
+                zoom: 18,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                disableDefaultUI: true,
+                accuracy: 5,
+                enabledHighAccuracy: true,
+                overviewMapControl: false,
+                panControl: false,
+                rotateControl: false,
+                scaleControl: false,
+                zoomControl: false,
+                streetViewControl: false,
+                center: v_posAlta,
+                maximumAge: 0//,timeout:1000
+            };
+            alert('3');
+            var v_mapAlta = new google.maps.Map(document.getElementById('divMapaInventarioGPS'), v_mapOptions);
+            alert('4');
+
+            var v_marcador = new google.maps.Marker({
+                position: v_posAlta,
+                map: v_mapAlta
+            });
+            alert('5');
+
+
+        }
+        catch (ex) {
+            alert(ex.message);
+        }
+
+    }
 }
