@@ -1,6 +1,7 @@
 
 function inicioPageZoomFoto() {
     if(_sZoomFotoOrigen=='Inventario'){
+        document.getElementById("btnFotoActualizar").style.visibility="visibility";
         if(_sZoomFoto != ''){
             MostrarFoto();
         }
@@ -9,11 +10,15 @@ function inicioPageZoomFoto() {
         }
     }
     else{
+        document.getElementById("btnFotoActualizar").style.visibility="hidden";
         MostrarFoto();
     }
 
 }
 
+function ActualizarFoto(){
+    HacerFoto();
+}
 function HacerFoto() {
     try {
         navigator.camera.getPicture(hacerfotoOK, hacerFotoERROR, {

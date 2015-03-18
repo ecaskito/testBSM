@@ -127,17 +127,11 @@ function CambiarMarcador(p_respuesta) {
         if (p_respuesta == 1) {
             eliminarMarcadorMapa();
 
-            posAlta = _mapaEvento.latLng;
-            _mapaMarcador.setCenter(posAlta);
+            _sInventarioPosicion = _mapaEvento.latLng;
+            _mapaMarcador.setCenter(_sInventarioPosicion);
 
-            sDireccionAlta = '';
-            cogerDireccion(_mapaEvento.latLng, true);   //true ==> solo calle y num
 
             $.doTimeout(700, function () {
-                if (sDireccionAlta == '') {
-                    sDireccionAlta = _mapaEvento.latLng.lat() + " , " + _mapaEvento.latLng.lng();
-                    $('#labelDireccion').text(sDireccionAlta);
-                }
                 eliminarMarcadorMapa();
                 nuevoMarcadorSobrePlanoClickInfoWindow1("ALTA", _mapaMarcador, _mapaEvento.latLng, '', null);
 

@@ -174,3 +174,7 @@ function abrirZoomFotoInventario(){
 
     abrirPagina("pageZoomFoto");
 }
+
+function abrirGPSInventario(){
+    abrirPagina("pageGPS");
+}

@@ -33,24 +33,23 @@ function getDatosUsuario(){
     }
 }*/
 
-function getComunicats(){
-    var aComunicats = new Array();
+function getSector1(){
+    var aSector1 = new Array();
 
-    //var sSel = "Select ID, REFERENCIA, ESTAT, DATA, CARRER, NUM, COORD_X, COORD_Y, COMENTARI From COMUNICATS Order By ID DESC";
 
-    var objComunicat = null;
+    var objSector1 = null;
     var nInd = 0;
-    var n = leeObjetoLocal('COMUNICATS_NEXTVAL' , 0);
+    var n = leeObjetoLocal('SECTOR1_NEXTVAL' , 0);
     try {
         while (true){
-            objComunicat = leeObjetoLocal('COMUNICAT_' + (n--).toString().trim() , 'NO_EXISTE');
-            if(objComunicat == 'NO_EXISTE') break;
-            aComunicats[nInd++] = objComunicat;
+            objSector1 = leeObjetoLocal('SECTOR1_' + (n--).toString().trim() , 'NO_EXISTE');
+            if(objSector1 == 'NO_EXISTE') break;
+            aSector1[nInd++] = objSector1;
         }
-        return aComunicats;
+        return aSector1;
     }
     catch(e){
-        mensaje('Error obtenint els comunicats : ' + e);
+        mensaje('Error obtenint els sector1 : ' + e);
         return null;
     }
 }

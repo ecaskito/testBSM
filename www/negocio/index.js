@@ -161,5 +161,11 @@ function abrirPagina(sPag) {
             case 'pageZoomFoto':
                 $.doTimeout(1500, inicioPageZoomFoto());
                 break;
+            case 'pageZoomGPS':
+                if (_GPSwathID == null){
+                    getLocation();
+                }
+                $.doTimeout(1500, inicioPageGPS());
+                break;
         }
 }

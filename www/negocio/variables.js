@@ -139,8 +139,7 @@ var _sInventarioObservaciones="";
 var _sInventarioFaltanDatos="";
 var _sInventarioIncidencia="";
 var _sInventarioFoto='';
-var _sInventarioCoordX="";
-var _sInventarioCoordY="";
+var _sInventarioPosicion="";
 
 var _tempInventarioLabelText=null;
 var _tempInventarioCampoText=null;
@@ -148,3 +147,10 @@ var _tempInventarioCampoText=null;
 
 var _sZoomFoto='';
 var _sZoomFotoOrigen='';
+
+var _GPSPosicion = null;
+var _GPSwathID=null;
+var _GPScurrentposition=false;
+var _ayuntamiento_posicionX = '41,3465198794557';
+var _ayuntamiento_posicionY = '1,69800017393893';
+
