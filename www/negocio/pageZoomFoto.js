@@ -1,15 +1,18 @@
 
 function inicioPageZoomFoto() {
-    if(_sZoomFotoOrigen=='Inventario'){
-        document.getElementById("btnZoomFotoBorrar").style.visibility="visibility";
-        document.getElementById("btnZoomFotoRefrescar").style.visibility="visibility";
-        document.getElementById("btnZoomFotoAceptar").style.visibility="visibility";
+    try{
+        if(_sZoomFotoOrigen=='Inventario'){
+            document.getElementById("btnZoomFotoBorrar").style.visibility="visibility";
+            document.getElementById("btnZoomFotoRefrescar").style.visibility="visibility";
+            document.getElementById("btnZoomFotoAceptar").style.visibility="visibility";
+        }
+        else{
+            document.getElementById("btnZoomFotoBorrar").style.visibility="hidden";
+            document.getElementById("btnZoomFotoRefrescar").style.visibility="hidden";
+            document.getElementById("btnZoomFotoAceptar").style.visibility="hidden";
+        }
     }
-    else{
-        document.getElementById("btnZoomFotoBorrar").style.visibility="hidden";
-        document.getElementById("btnZoomFotoRefrescar").style.visibility="hidden";
-        document.getElementById("btnZoomFotoAceptar").style.visibility="hidden";
-    }
+    catch (ex){}
     MostrarFoto();
 }
 
