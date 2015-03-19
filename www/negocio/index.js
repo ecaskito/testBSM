@@ -162,6 +162,9 @@ function abrirPagina(sPag) {
                     getLocation();
                 }
                 $.doTimeout(1500, inicioPageGPS());
+            case 'pageInfoEnvio':
+                //$.doTimeout(1500, inicioPageZoomFoto());
+                break;
                 break;
         }
 }

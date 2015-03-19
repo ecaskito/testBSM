@@ -347,11 +347,11 @@ function Limpiar(){
     _tempInventarioLabelText=null;
     _tempInventarioCampoText=null;
 
-    abrirPagina("pageFamilia");
 
 
 }
 
 function EnviarInventario(){
     Limpiar();
+    abrirPagina("pageInfoEnvio");
 }
