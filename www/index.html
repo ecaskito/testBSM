@@ -1188,23 +1188,6 @@
                     </table>
                 <table width="100%" cellpadding="1" cellspacing="1">
                     <tr>
-                        <td width="48%">
-                            <div id="divInventarioFoto" style="width:100%;text-align: center">
-                                <img id="imgInventarioFoto" src="img/sinfoto.png" style="max-height:150px;max-width:98%; border:1px solid #dddddd" onclick="abrirZoomFotoInventario();" />
-                            </div>
-                        </td>
-                        <td  width="48%">
-                            <div id="divInventarioGPS" style="width:100%;text-align: center">
-                                <img id="imgInventarioGPS" src="img/singps.png" style="max-height:150px;max-width:98%; border:1px solid #dddddd" onclick="abrirGPSInventario();" />
-                                <div id="divMapaInventarioGPS" style="height:150px;max-width:98%;"  onclick="abrirGPSInventario();">
-                                </div>
-
-                            </div>
-                        </td>
-                    </tr>
-                    </table>
-                <table width="100%" cellpadding="1" cellspacing="1">
-                    <tr>
                         <td  class="celdaLabel" width="116px">FALTEN DADES:</td>
                         <td colspan="2"  align="left">
                             <table>
@@ -1227,7 +1210,24 @@
                         </td>
                     </tr>
                     </table>
-                <div style="padding-left:5px;padding-right: 5px">
+                <table width="100%" cellpadding="1" cellspacing="1" style="margin-top: 7px;margin-bottom: 7px">
+                    <tr>
+                        <td width="48%" valign="top">
+                            <div id="divInventarioFoto" style="width:100%;text-align: center">
+                                <img id="imgInventarioFoto" src="img/sinfoto.png" style="max-height:150px;max-width:98%; border:1px solid #dddddd" onclick="abrirZoomFotoInventario();" />
+                            </div>
+                        </td>
+                        <td  width="48%"  valign="top">
+                            <div id="divInventarioGPS" style="width:100%;text-align: center">
+                                <img id="imgInventarioGPS" src="img/singps.png" style="max-height:150px;max-width:98%; border:1px solid #dddddd" onclick="abrirGPSInventario();" />
+                                <div id="divMapaInventarioGPS" style="height:150px;max-width:98%;"  onclick="abrirGPSInventario();">
+                                </div>
+
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <div >
                     <a href="#" id="btnInventarioEnviar" onclick="EnviarInventario()"  data-mini="true" data-inline="false" data-role="button" data-theme="c">
                         Enviar
                     </a>

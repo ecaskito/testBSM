@@ -648,7 +648,7 @@ textarea.ui-input-text.ui-textinput-autogrow{
 
 .lbltexto1{
     color: #333333;
-    padding:5px 10px 3px 10px !Important;
+    padding:5px 10px 0px 10px !Important;
     font-size: 0.95em !Important;
     margin: 0px !Important;
 }

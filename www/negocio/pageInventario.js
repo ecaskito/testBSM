@@ -23,10 +23,10 @@ function inicioPageInventario(){
     $('#labelINVENTARIO_SMARCA').text(_sInventarioMarca);
     $('#labelINVENTARIO_SMODELO').text(_sInventarioModelo);
 
-    $('#labelINVENTARIO_SNUMSERIE').text(' ');
-    $('#labelINVENTARIO_SETIQUETA').text(' ');
-    $('#labelINVENTARIO_SDESIGNACION').text(' ');
-    $('#labelINVENTARIO_SOBSERVACIONES').text(' ');
+    $('#labelINVENTARIO_SNUMSERIE').text(_sInventarioNumSerie);
+    $('#labelINVENTARIO_SETIQUETA').text(_sInventarioEtiqueta);
+    $('#labelINVENTARIO_SDESIGNACION').text(_sInventarioDesignacion);
+    $('#labelINVENTARIO_SOBSERVACIONES').text(_sInventarioObservaciones);
 
     $('#labelINVENTARIO_ICANTIDAD').text('1');
     $('#labelINVENTARIO_SNUMSERIE').text(' ');
@@ -36,9 +36,6 @@ function inicioPageInventario(){
 }
 
 
-function EnviarInventario(){
-
-}
 
 function AbrirTexto(p_elemento,p_label){
     _tempInventarioLabelText=p_label;
@@ -252,12 +249,109 @@ function mostrarCoordGPSInventario() {
                 position: v_posAlta,
                 map: v_mapAlta
             });
-
-
+try{
+    v_mapAlta.refresh()
+}
+catch (ex){}
         }
         catch (ex) {
             alert(ex.message);
         }
 
     }
+}
+
+
+function Limpiar(){
+
+
+
+    _dicFamiliaImagen= {};
+    _dicFamiliaNombre= {};
+    _dicFamiliaCodigo= {};
+
+    _iIdFamilia = null;
+    _sIdFamilia = null;
+    _sFamilia = null;
+
+
+    _dicActivoCodigo= {};
+    _dicActivoFamilia= {};
+    _dicActivoSubFamilia= {};
+    _dicActivoEquipo= {};
+    _dicActivoElemento1= {};
+    _dicActivoElemento2= {};
+    _dicActivoElemento3= {};
+    _dicActivoFoto= {};
+    _dicActivoEtiquetable= {};
+
+
+    _tempIdSubFamilia=null;
+    _dicSubFamiliaCodigo= {};
+    _dicSubFamiliaNombre= {};
+
+
+    _iIdSubFamilia = null;
+    _sIdSubFamilia = null;
+    _sSubFamilia = null;
+
+    _tempIdEquipo=null;
+    _dicEquipoCodigo= {};
+    _dicEquipoNombre= {};
+
+    _iIdEquipo = null;
+    _sIdEquipo = null;
+    _sEquipo = null;
+
+    _tempIdElemento1=null;
+    _dicElemento1Codigo= {};
+    _dicElemento1Nombre= {};
+
+    _iIdElemento1 = null;
+    _sIdElemento1 = null;
+    _sElemento1 = null;
+
+    _tempIdElemento2=null;
+    _dicElemento2Codigo= {};
+    _dicElemento2Definicion= {};
+    _dicElemento2Modelo= {};
+    _dicElemento2Marca= {};
+    _dicElemento2Foto= {};
+
+    _iIdElemento2 = null;
+    _sIdElemento2 = null;
+    _sElemento2Definicion = null;
+    _sElemento2Marca = null;
+    _sElemento2Modelo = null;
+    _sElemento2Foto = null;
+
+    _iIdActivo = null;
+    _sIdActivo = null;
+    _sActivoFoto='';
+    _sActivoEtiqueta=null;
+
+    _sInventarioDefinicion="";
+    _sInventarioMarca="";
+    _sInventarioModelo="";
+    _sInventarioEstado="";
+    _sInventarioNumSerie="";
+    _sInventarioEtiqueta="";
+    _sInventarioDesignacion="";
+    _sInventarioNumero="";
+    _sInventarioObservaciones="";
+    _sInventarioFaltanDatos="";
+    _sInventarioIncidencia="";
+    _sInventarioFoto='';
+    _sInventarioPosicion=null;
+
+    _tempInventarioLabelText=null;
+    _tempInventarioCampoText=null;
+
+    abrirPagina("pageFamilia");
+
+
+}
+
+function EnviarInventario(){
+    Limpiar();
 }
